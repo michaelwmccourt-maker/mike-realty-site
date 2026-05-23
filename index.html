@@ -42,10 +42,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 /* Eyebrow — 1/3 the size of the main headline */
 .hero-eyebrow{
   font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
-  margin-bottom:20px;display:flex;align-items:center;gap:16px;
-  font-size:clamp(14px,2.2vw,26px);  /* ~1/3 of hero-h1 */
+  margin-top:28px;margin-bottom:0;display:flex;align-items:center;justify-content:center;gap:16px;
+  font-size:clamp(11px,1.75vw,21px);  /* 20% smaller than before, below btns */
 }
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:var(--gold);flex-shrink:0;}
 
 /* Hero headline — two lines: "Brokering the deals of tomorrow." / "Today." centered */
 .hero-h1{
@@ -300,12 +300,12 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   <video id="hero-video" src="https://res.cloudinary.com/dq1n9kjox/video/upload/v1779508592/Video_for_website_suwraf.mp4" autoplay muted loop playsinline preload="auto"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Miami &nbsp;·&nbsp; South Florida</p>
     <h1 class="hero-h1">Brokering the deals of tomorrow.<br><em>Today.</em></h1>
     <div class="hero-btns">
       <a href="active.html" class="btn-primary">View Active Listings</a>
       <a href="#closed" class="btn-ghost">See Closed Deals</a>
     </div>
+    <p class="hero-eyebrow">Miami &nbsp;·&nbsp; South Florida</p>
   </div>
 </section>
 
@@ -712,29 +712,38 @@ function initMap(d) {
       allMarkers.active.push({ marker, el });
     });
 
-    // SOLD — dot pins, scale via CSS box-shadow on hover instead of transform
-    (d.closed.sales||[]).filter(i=>i.coords).forEach(i => {
-      const el = document.createElement('div');
-      el.style.cssText = 'width:12px;height:12px;background:rgba(193,160,30,0.8);border:1.5px solid #C1A01E;border-radius:50%;cursor:pointer;';
-      el.title = `SOLD: ${i.address} · ${i.price}`;
-      el.addEventListener('mouseenter', () => { el.style.background='#C1A01E'; el.style.width='16px'; el.style.height='16px'; el.style.marginLeft='-2px'; el.style.marginTop='-2px'; });
-      el.addEventListener('mouseleave', () => { el.style.background='rgba(193,160,30,0.8)'; el.style.width='12px'; el.style.height='12px'; el.style.marginLeft='0'; el.style.marginTop='0'; });
-      el.addEventListener('click', () => openClosedModal(i));
-      const marker = new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
-      allMarkers.sold.push({ marker, el });
-    });
+    // SOLD — dot + label on hover using popup tooltip approach
+    function makeClosedPin(i, bg, border, group) {
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;';
 
-    // LEASED + RENTED
-    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i => {
-      const el = document.createElement('div');
-      el.style.cssText = 'width:10px;height:10px;background:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.65);border-radius:50%;cursor:pointer;';
-      el.title = `${i.type}: ${i.address} · ${i.price}`;
-      el.addEventListener('mouseenter', () => { el.style.background='rgba(255,255,255,0.8)'; el.style.width='14px'; el.style.height='14px'; el.style.marginLeft='-2px'; el.style.marginTop='-2px'; });
-      el.addEventListener('mouseleave', () => { el.style.background='rgba(255,255,255,0.4)'; el.style.width='10px'; el.style.height='10px'; el.style.marginLeft='0'; el.style.marginTop='0'; });
-      el.addEventListener('click', () => openClosedModal(i));
-      const marker = new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
-      allMarkers.leased.push({ marker, el });
-    });
+      const dot = document.createElement('div');
+      dot.style.cssText = `width:12px;height:12px;background:${bg};border:1.5px solid ${border};border-radius:50%;transition:width 0.15s,height 0.15s;flex-shrink:0;`;
+
+      const tip = document.createElement('div');
+      tip.style.cssText = `position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:rgba(4,30,66,0.95);color:#fff;font-family:'Raleway',sans-serif;font-size:9px;font-weight:600;white-space:nowrap;padding:4px 8px;border:1px solid ${border};pointer-events:none;opacity:0;transition:opacity 0.15s;letter-spacing:0.04em;`;
+      const addr = i.address.length > 22 ? i.address.substring(0,22)+'…' : i.address;
+      tip.textContent = `${addr} · ${i.price}`;
+
+      wrap.appendChild(tip);
+      wrap.appendChild(dot);
+
+      wrap.addEventListener('mouseenter', () => {
+        dot.style.width='16px'; dot.style.height='16px';
+        tip.style.opacity='1';
+      });
+      wrap.addEventListener('mouseleave', () => {
+        dot.style.width='12px'; dot.style.height='12px';
+        tip.style.opacity='0';
+      });
+      wrap.addEventListener('click', () => openClosedModal(i));
+
+      const marker = new mapboxgl.Marker({element:wrap}).setLngLat(i.coords).addTo(map);
+      allMarkers[group].push({ marker, el: wrap });
+    }
+
+    (d.closed.sales||[]).filter(i=>i.coords).forEach(i => makeClosedPin(i,'rgba(193,160,30,0.8)','#C1A01E','sold'));
+    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i => makeClosedPin(i,'rgba(255,255,255,0.45)','rgba(255,255,255,0.7)','leased'));
   });
 }
 
