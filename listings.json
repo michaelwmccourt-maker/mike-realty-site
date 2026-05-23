@@ -1,5 +1,5 @@
 {
-  "meta": { 
+  "meta": {
     "agentName": "Michael McCourt",
     "agentTitle": "Executive Agent",
     "brokerage": "Global Investments Realty",
@@ -44,7 +44,7 @@
         -80.1917,
         25.8065
       ],
-      "mapLabel": "$3.2M \u00b7 437 NE 30th",
+      "mapLabel": "$3.2M · 437 NE 30th",
       "description": "Two-story, 7-unit income property perfectly positioned in Edgewater. All units leased month-to-month, offering immediate income with full flexibility for future redevelopment. T6-36a(L) zoning allows up to 66,000 buildable SF.",
       "highlights": [
         "7 income units",
@@ -64,7 +64,7 @@
         "Year Built": "1918",
         "Zoning": "T6-36a(L)"
       },
-      "terms": "All Cash \u00b7 Conventional/Refinance"
+      "terms": "All Cash · Conventional/Refinance"
     },
     {
       "id": "6326-nw-4th",
@@ -78,7 +78,7 @@
       "neighborhood": "Little River",
       "city": "Miami, FL 33150",
       "address": "6326 NW 4th Ave",
-      "type": "Multifamily \u2014 Legal Triplex / Non-Conforming Fourplex",
+      "type": "Multifamily — Legal Triplex / Non-Conforming Fourplex",
       "mlsId": "A12019354",
       "price": 595000,
       "priceDisplay": "$595,000",
@@ -89,16 +89,16 @@
         -80.2134,
         25.839
       ],
-      "mapLabel": "$595K \u00b7 6326 NW 4th",
+      "mapLabel": "$595K · 6326 NW 4th",
       "description": "Cash-flowing multifamily in the fast-emerging Little River submarket. Legal triplex operating as a non-conforming fourplex with 3 of 4 units currently leased. The vacant unit needs light work and represents immediate upside once stabilized.",
       "highlights": [
-        "Unit 1: 2BD/1BA \u2014 $1,500/mo",
-        "Unit 2: 2BD/1BA \u2014 Vacant (light work needed)",
-        "Unit 3: 1BD/1BA \u2014 $1,200/mo",
-        "Unit 4: 1BD/1BA \u2014 $1,000/mo",
+        "Unit 1: 2BD/1BA — $1,500/mo",
+        "Unit 2: 2BD/1BA — Vacant (light work needed)",
+        "Unit 3: 1BD/1BA — $1,200/mo",
+        "Unit 4: 1BD/1BA — $1,000/mo",
         "Current gross rent: $3,700/mo",
         "Stabilized potential: $5,200/mo",
-        "Near Wynwood \u00b7 Little Haiti \u00b7 Design District",
+        "Near Wynwood · Little Haiti · Design District",
         "Do not disturb tenants"
       ],
       "specs": {
@@ -109,7 +109,7 @@
         "Year Built": "1929",
         "Zoning": "4600"
       },
-      "terms": "All Cash \u00b7 FHA"
+      "terms": "All Cash · FHA"
     },
     {
       "id": "1115-meridian",
@@ -122,7 +122,7 @@
       "neighborhood": "South Beach",
       "city": "Miami Beach, FL 33139",
       "address": "1115 Meridian Ave #TH",
-      "type": "Townhouse Condo \u2014 Park Square",
+      "type": "Townhouse Condo — Park Square",
       "mlsId": "A11990206",
       "price": 550000,
       "priceDisplay": "$550,000",
@@ -133,19 +133,19 @@
         -80.1395,
         25.7829
       ],
-      "mapLabel": "$550K \u00b7 1115 Meridian",
-      "description": "A rare South Beach find. Split-level townhouse condo with massive private patio and fully fenced garden. Impact windows, exposed wood ceilings, in-unit W/D. Cash only \u2014 land lease with 20 years remaining.",
+      "mapLabel": "$550K · 1115 Meridian",
+      "description": "A rare South Beach find. Split-level townhouse condo with massive private patio and fully fenced garden. Impact windows, exposed wood ceilings, in-unit W/D. Cash only — land lease with 20 years remaining.",
       "highlights": [
         "2BD / 2BA split-level",
         "~1,200 SF living area",
         "Large private patio & fenced garden",
-        "Impact windows \u2014 full storm protection",
+        "Impact windows — full storm protection",
         "Exposed wood ceilings",
         "In-unit washer/dryer",
         "New 2023 roof",
         "HOA: $1,324/mo (landscaping, water, trash)",
-        "Cash only \u00b7 Land lease (20 yrs remaining)",
-        "Min 180-day lease \u00b7 No daily rentals"
+        "Cash only · Land lease (20 yrs remaining)",
+        "Min 180-day lease · No daily rentals"
       ],
       "specs": {
         "Bedrooms": "2",
@@ -168,7 +168,7 @@
       "neighborhood": "Edgewater",
       "city": "Miami, FL 33137",
       "address": "3301 NE 5th Ave #618",
-      "type": "Residential Rental \u2014 Bay Park Towers Condo",
+      "type": "Residential Rental — Bay Park Towers Condo",
       "mlsId": "A11995674",
       "price": 2950,
       "priceDisplay": "$2,950/mo",
@@ -179,18 +179,18 @@
         -80.1878,
         25.8098
       ],
-      "mapLabel": "$2,950/mo \u00b7 Bay Park",
+      "mapLabel": "$2,950/mo · Bay Park",
       "description": "Spacious 2BD/2BA at Bay Park Towers in Edgewater. Guard-gated community with resort-style bayfront pool, tennis courts, and fitness center. Exceptionally large closets. Steps from Margaret Pace Park, Design District, and Wynwood.",
       "highlights": [
-        "2BD / 2BA \u00b7 1,230 SF",
+        "2BD / 2BA · 1,230 SF",
         "Floor 6 of 13",
         "Guard-gated community",
         "Bayfront pool overlooking Biscayne Bay",
-        "Tennis courts \u00b7 Fitness center",
+        "Tennis courts · Fitness center",
         "1 assigned parking space",
         "Steps from Margaret Pace Park",
         "Near Design District & Wynwood",
-        "App fee: $150 \u00b7 Renewable lease"
+        "App fee: $150 · Renewable lease"
       ],
       "specs": {
         "Bedrooms": "2",
@@ -200,7 +200,7 @@
         "Floor": "6 of 13",
         "Available": "Now"
       },
-      "terms": "Annual unfurnished \u00b7 Available now"
+      "terms": "Annual unfurnished · Available now"
     }
   ],
   "pending": [
@@ -240,7 +240,7 @@
         "Year Built": "1966",
         "Garage": "1-Car"
       },
-      "terms": "All Cash \u00b7 Conventional \u00b7 FHA"
+      "terms": "All Cash · Conventional · FHA"
     }
   ],
   "closed": {
@@ -248,136 +248,396 @@
       {
         "address": "10521 SW 184th St",
         "type": "Multifamily",
-        "price": "$607,500"
+        "price": "$607,500",
+        "coords": [
+          -80.3876,
+          25.5813
+        ],
+        "mapLabel": "$607,500 · 10521 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "14513 SW 104th Pl",
         "type": "Single Family",
-        "price": "$550,000"
+        "price": "$550,000",
+        "coords": [
+          -80.3551,
+          25.6627
+        ],
+        "mapLabel": "$550,000 · 14513 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "10621 SW 184th St",
         "type": "Multifamily",
-        "price": "$620,000"
+        "price": "$620,000",
+        "coords": [
+          -80.3892,
+          25.5813
+        ],
+        "mapLabel": "$620,000 · 10621 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "7544 NE 1st Ave",
         "type": "Multifamily",
-        "price": "$480,000"
+        "price": "$480,000",
+        "coords": [
+          -80.1907,
+          25.8462
+        ],
+        "mapLabel": "$480,000 · 7544 NE",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "7560 NE Miami Ct",
         "type": "Multifamily",
-        "price": "$400,000"
+        "price": "$400,000",
+        "coords": [
+          -80.1921,
+          25.846
+        ],
+        "mapLabel": "$400,000 · 7560 NE",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "10541 SW 184th St",
         "type": "Multifamily",
-        "price": "$621,000"
+        "price": "$621,000",
+        "coords": [
+          -80.3882,
+          25.5813
+        ],
+        "mapLabel": "$621,000 · 10541 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "10531 SW 184th St",
         "type": "Multifamily",
-        "price": "$605,000"
+        "price": "$605,000",
+        "coords": [
+          -80.3879,
+          25.5813
+        ],
+        "mapLabel": "$605,000 · 10531 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "18350 SW 105th Ave",
         "type": "Multifamily",
-        "price": "$613,741"
+        "price": "$613,741",
+        "coords": [
+          -80.3571,
+          25.5994
+        ],
+        "mapLabel": "$613,741 · 18350 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "3 NE 75th St",
         "type": "Multifamily",
-        "price": "$525,000"
+        "price": "$525,000",
+        "coords": [
+          -80.1918,
+          25.8444
+        ],
+        "mapLabel": "$525,000 · 3 NE",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "14780 Harrison St",
         "type": "Single Family",
-        "price": "$450,000"
+        "price": "$450,000",
+        "coords": [
+          -80.2126,
+          25.6096
+        ],
+        "mapLabel": "$450,000 · 14780 Harrison",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "10601 SW 184th St",
         "type": "Multifamily",
-        "price": "$617,500"
+        "price": "$617,500",
+        "coords": [
+          -80.3886,
+          25.5813
+        ],
+        "mapLabel": "$617,500 · 10601 SW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "4361 NW 35th Ter",
         "type": "Condominium",
-        "price": "$330,000"
+        "price": "$330,000",
+        "coords": [
+          -80.2101,
+          26.1726
+        ],
+        "mapLabel": "$330,000 · 4361 NW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "401 NW 81st St",
         "type": "Multifamily",
-        "price": "$400,000"
+        "price": "$400,000",
+        "coords": [
+          -80.2134,
+          25.851
+        ],
+        "mapLabel": "$400,000 · 401 NW",
+        "mapType": "sold",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       }
     ],
     "leases": [
       {
         "address": "8411 Biscayne Blvd",
         "type": "Commercial Lease",
-        "price": "$66,000"
+        "price": "$66,000",
+        "coords": [
+          -80.1884,
+          25.8518
+        ],
+        "mapLabel": "$66,000 · 8411 Biscayne Blvd",
+        "mapType": "leased",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "Simon Malls",
         "type": "Retail Lease",
-        "price": "$72,000"
+        "price": "$72,000",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {},
+        "coords": [
+          -80.1234,
+          25.8012
+        ],
+        "mapLabel": "$72,000 · Simon Malls",
+        "mapType": "leased"
       },
       {
         "address": "3204 NE 2nd Ave",
         "type": "Commercial Lease",
-        "price": "$191,129"
+        "price": "$191,129",
+        "coords": [
+          -80.1957,
+          25.8057
+        ],
+        "mapLabel": "$191,129 · 3204 NE 2nd Ave",
+        "mapType": "leased",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "3206 NE 2nd Ave",
         "type": "Commercial Lease",
-        "price": "$412,700"
+        "price": "$412,700",
+        "coords": [
+          -80.1957,
+          25.8057
+        ],
+        "mapLabel": "$412,700 · 3206 NE 2nd Ave",
+        "mapType": "leased",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       }
     ],
     "rentals": [
       {
         "address": "1081 NE 41st Ter",
         "type": "Rental Placed",
-        "price": "$2,650/mo"
+        "price": "$2,650/mo",
+        "coords": [
+          -80.1902,
+          25.8201
+        ],
+        "mapLabel": "$2,650/mo · 1081 NE 41st Ter",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "151 SE 1st St",
         "type": "Rental Placed",
-        "price": "$2,200/mo"
+        "price": "$2,200/mo",
+        "coords": [
+          -80.1918,
+          25.7697
+        ],
+        "mapLabel": "$2,200/mo · 151 SE 1st St",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "227 NE 25th St",
         "type": "Rental Placed",
-        "price": "$1,500/mo"
+        "price": "$1,500/mo",
+        "coords": [
+          -80.1958,
+          25.8054
+        ],
+        "mapLabel": "$1,500/mo · 227 NE 25th St",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "1255 Collins Ave #501",
         "type": "Rental Placed",
-        "price": "$1,975/mo"
+        "price": "$1,975/mo",
+        "coords": [
+          -80.1327,
+          25.7925
+        ],
+        "mapLabel": "$1,975/mo · 1255 Collins Ave #50",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "13345 SW 83rd Ct",
         "type": "Rental Placed",
-        "price": "$5,200/mo"
+        "price": "$5,200/mo",
+        "coords": [
+          -80.3309,
+          25.6721
+        ],
+        "mapLabel": "$5,200/mo · 13345 SW 83rd Ct",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "437 NE 30th St #4",
         "type": "Rental Placed",
-        "price": "$1,600/mo"
+        "price": "$1,600/mo",
+        "coords": [
+          -80.1917,
+          25.8065
+        ],
+        "mapLabel": "$1,600/mo · 437 NE 30th St #4",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "6326 NW 4th Ave #2",
         "type": "Rental Placed",
-        "price": "$1,000/mo"
+        "price": "$1,000/mo",
+        "coords": [
+          -80.2134,
+          25.839
+        ],
+        "mapLabel": "$1,000/mo · 6326 NW 4th Ave #2",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "6326 NW 4th Ave #4",
         "type": "Rental Placed",
-        "price": "$1,200/mo"
+        "price": "$1,200/mo",
+        "coords": [
+          -80.2134,
+          25.839
+        ],
+        "mapLabel": "$1,200/mo · 6326 NW 4th Ave #4",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "6326 NW 4th Ave #1",
         "type": "Rental Placed",
-        "price": "$1,500/mo"
+        "price": "$1,500/mo",
+        "coords": [
+          -80.2134,
+          25.839
+        ],
+        "mapLabel": "$1,500/mo · 6326 NW 4th Ave #1",
+        "mapType": "rented",
+        "imageUrl": "",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       }
     ]
   }
