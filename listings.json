@@ -1,4 +1,3 @@
-
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -627,7 +626,7 @@
       {
         "address": "13151 SW 62 Ter Unit 103",
         "type": "Condominium",
-        "price": "TBD",
+        "price": "$220,000",
         "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779521609/13151_SW_62_TER_UNIT_103_u1zq3a.jpg",
         "coords": [
           -80.3412,
