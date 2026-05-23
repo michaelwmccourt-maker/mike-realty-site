@@ -40,11 +40,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 
 /* Eyebrow — 1/3 the size of the main headline */
 .hero-eyebrow{
-  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
+  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:#fff;
   margin-top:28px;margin-bottom:0;display:flex;align-items:center;justify-content:center;gap:16px;
-  font-size:clamp(11px,1.75vw,21px);  /* 20% smaller than before, below btns */
+  font-size:clamp(11px,1.75vw,21px);
 }
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:var(--gold);flex-shrink:0;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:rgba(255,255,255,0.5);flex-shrink:0;}
 
 /* Hero headline — two lines: "Brokering the deals of tomorrow." / "Today." centered */
 .hero-h1{
@@ -56,7 +56,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
   text-align:center;
 }
 .hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;display:inline;}
-.hero-btns{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;justify-content:center;}
+.hero-btns{display:flex;gap:14px;margin-top:clamp(48px,8vh,96px);flex-wrap:wrap;justify-content:center;}
 .btn-primary{background:var(--gold);color:var(--navy);padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
 .btn-ghost{border:1px solid rgba(255,255,255,0.45);color:#fff;padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;background:transparent;cursor:pointer;transition:all 0.2s;display:inline-block;}
@@ -145,9 +145,9 @@ section{padding:84px 72px;}
 /* CLOSED CAROUSEL */
 #closed{background:var(--navy);}
 .closed-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:48px;}
-.closed-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(193,160,30,0.09);padding:28px;text-align:center;}
-.closed-stat-num{font-family:var(--serif-display);font-size:36px;font-weight:400;color:var(--gold);margin-bottom:7px;}
-.closed-stat-label{font-family:var(--sans);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.33);font-weight:600;}
+.closed-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(193,160,30,0.09);padding:20px 12px;text-align:center;}
+.closed-stat-num{font-family:var(--serif-display);font-size:clamp(22px,4vw,36px);font-weight:400;color:var(--gold);margin-bottom:5px;line-height:1;}
+.closed-stat-label{font-family:var(--sans);font-size:clamp(7px,1.5vw,9px);letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.33);font-weight:600;line-height:1.3;}
 .closed-carousel-wrap{position:relative;}
 .closed-carousel{display:flex;gap:2px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:4px;scrollbar-width:none;}
 .closed-carousel::-webkit-scrollbar{display:none;}
@@ -364,10 +364,10 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <button class="map-filter-btn" onclick="setMapFilter('leased',this)">Leased / Rented</button>
   </div>
   <div class="map-legend">
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:#C1A01E;"></div><span class="map-legend-label">Active · Sale</span></div>
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1a6b3c;"></div><span class="map-legend-label">Active · Rent</span></div>
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:rgba(193,160,30,0.6);border-radius:50%;"></div><span class="map-legend-label">Sold</span></div>
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:rgba(255,255,255,0.4);"></div><span class="map-legend-label">Leased / Rented</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1565C0;"></div><span class="map-legend-label">Active · Sale</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1565C0;"></div><span class="map-legend-label">Active · Rent</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1a6b3c;"></div><span class="map-legend-label">Sold</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#C1A01E;"></div><span class="map-legend-label">Leased / Rented</span></div>
   </div>
 </div>
 
@@ -375,7 +375,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
 <section id="listings">
   <div class="section-header fade-up">
     <div><p class="section-eyebrow">Available Now</p><h2 class="section-title">Active <em>Listings</em></h2></div>
-    <a href="active.html" class="view-all-btn" style="margin-bottom:0;">View All ↗</a>
+
   </div>
   <div class="listings-filter fade-up">
     <button class="filter-btn active" onclick="filterListings('all',this)">All</button>
@@ -396,7 +396,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
 <section id="closed">
   <div class="section-header fade-up">
     <div><p class="section-eyebrow">Track Record</p><h2 class="section-title">Pending &amp; <em>Sold</em></h2></div>
-    <a href="closed.html" class="view-all-btn" style="margin-bottom:0;">Full History ↗</a>
+
   </div>
   <div class="closed-summary fade-up">
     <div class="closed-stat"><div class="closed-stat-num">$7.3M</div><div class="closed-stat-label">Sales Volume</div></div>
@@ -727,7 +727,7 @@ function initMap(d) {
     d.active.forEach(l => {
       const el = document.createElement('div');
       const sale = l.badgeType === 'sale';
-      el.style.cssText = `background:${sale?'#C1A01E':'#1a6b3c'};color:${sale?'#041E42':'#fff'};padding:6px 12px;font-size:10px;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.6);white-space:nowrap;letter-spacing:0.04em;`;
+      el.style.cssText = `background:#1565C0;color:#fff;padding:6px 12px;font-size:10px;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.6);white-space:nowrap;letter-spacing:0.04em;`;
       el.textContent = l.mapLabel;
       el.addEventListener('click', () => openModal(l.id, 'active'));
       const marker = new mapboxgl.Marker({element:el}).setLngLat(l.coords).addTo(map);
@@ -747,9 +747,9 @@ function initMap(d) {
       allMarkers[group].push({ marker, el });
     }
     (d.closed.sales||[]).filter(i=>i.coords).forEach(i =>
-      makeClosedPin(i, 'rgba(193,160,30,0.82)', '#041E42', 'sold'));
+      makeClosedPin(i, '#1a6b3c', '#fff', 'sold'));
     [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i =>
-      makeClosedPin(i, 'rgba(255,255,255,0.18)', 'rgba(255,255,255,0.85)', 'leased'));
+      makeClosedPin(i, '#C1A01E', '#041E42', 'leased'));
   });
 }
 
