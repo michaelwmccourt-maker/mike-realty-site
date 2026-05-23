@@ -38,12 +38,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 #hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,30,66,0.25) 0%,rgba(4,30,66,0.1) 35%,rgba(4,30,66,0.52) 72%,rgba(4,30,66,0.9) 100%);pointer-events:none;}
 .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;}
-.hero-eyebrow{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:14px;}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:30px;height:1px;background:var(--gold);}
-/* Hero tagline — smaller, single line feel, bold Cormorant */
-.hero-h1{font-family:var(--serif-display);font-size:clamp(42px,6.5vw,88px);font-weight:700;line-height:1.1;color:#fff;letter-spacing:0.015em;text-shadow:0 2px 40px rgba(0,0,0,0.4);max-width:1000px;white-space:nowrap;}
-.hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;}
-@media(max-width:900px){.hero-h1{white-space:normal;font-size:clamp(32px,8vw,56px);}}
+
+/* Eyebrow — 1/3 the size of the main headline */
+.hero-eyebrow{
+  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:20px;display:flex;align-items:center;gap:16px;
+  font-size:clamp(14px,2.2vw,26px);  /* ~1/3 of hero-h1 */
+}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+
+/* Hero headline — two lines: "Brokering the deals of tomorrow." / "Today." centered */
+.hero-h1{
+  font-family:var(--serif-display);
+  font-size:clamp(40px,6vw,82px);
+  font-weight:700;line-height:1.1;color:#fff;
+  letter-spacing:0.01em;
+  text-shadow:0 2px 40px rgba(0,0,0,0.4);
+  text-align:center;
+}
+.hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;display:block;}
 .hero-btns{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;justify-content:center;}
 .btn-primary{background:var(--gold);color:var(--navy);padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
@@ -82,10 +95,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .map-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
 .map-label h2{font-family:var(--serif-display);font-size:34px;font-weight:300;color:#fff;line-height:1.12;}
 .map-label h2 em{font-style:italic;color:var(--gold);}
-.map-legend{position:absolute;bottom:24px;right:24px;z-index:10;display:flex;gap:8px;flex-wrap:wrap;}
-.map-legend-item{display:flex;align-items:center;gap:6px;background:rgba(4,30,66,0.88);padding:5px 10px;border:1px solid rgba(255,255,255,0.08);}
+.map-controls{position:absolute;top:48px;right:24px;z-index:10;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
+.map-filter-btn{padding:6px 14px;border:1px solid rgba(255,255,255,0.18);background:rgba(4,30,66,0.85);color:rgba(255,255,255,0.65);font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;backdrop-filter:blur(8px);}
+.map-filter-btn:hover,.map-filter-btn.active{border-color:var(--gold);color:var(--gold);background:rgba(4,30,66,0.95);}
+.map-legend{position:absolute;bottom:20px;right:20px;z-index:10;display:flex;gap:7px;flex-wrap:wrap;}
+.map-legend-item{display:flex;align-items:center;gap:5px;background:rgba(4,30,66,0.88);padding:5px 9px;border:1px solid rgba(255,255,255,0.07);}
 .map-legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-.map-legend-label{font-family:var(--sans);font-size:8.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);}
+.map-legend-label{font-family:var(--sans);font-size:8px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);}
 
 /* SECTIONS */
 section{padding:84px 72px;}
@@ -96,7 +112,7 @@ section{padding:84px 72px;}
 .section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px;flex-wrap:wrap;gap:14px;}
 .section-header .section-title{margin-bottom:0;}
 
-/* ACTIVE LISTINGS */
+/* LISTINGS */
 #listings{background:#0d0d0d;}
 .listings-filter{display:flex;gap:8px;margin-bottom:36px;flex-wrap:wrap;}
 .filter-btn{padding:7px 18px;border:1px solid rgba(255,255,255,0.13);background:transparent;color:rgba(255,255,255,0.48);font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;}
@@ -112,7 +128,6 @@ section{padding:84px 72px;}
 .card-badge{position:absolute;top:14px;left:14px;font-family:var(--sans);font-size:8.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;padding:5px 11px;z-index:2;}
 .badge-sale{background:var(--gold);color:var(--navy);}
 .badge-rent{background:#1a6b3c;color:#fff;}
-.badge-pending{background:var(--pending);color:#fff;}
 .card-body{padding:22px;flex:1;display:flex;flex-direction:column;}
 .card-neighborhood{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
 .card-address{font-family:var(--serif-display);font-size:19px;font-weight:500;color:#fff;line-height:1.2;margin-bottom:4px;}
@@ -126,22 +141,17 @@ section{padding:84px 72px;}
 .view-all-btn{border:1px solid rgba(193,160,30,0.35);color:rgba(193,160,30,0.8);padding:11px 30px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;white-space:nowrap;}
 .view-all-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-pale);}
 
-/* CLOSED + PENDING — horizontal scroll carousel */
+/* CLOSED CAROUSEL */
 #closed{background:var(--navy);}
 .closed-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:48px;}
 .closed-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(193,160,30,0.09);padding:28px;text-align:center;}
 .closed-stat-num{font-family:var(--serif-display);font-size:36px;font-weight:400;color:var(--gold);margin-bottom:7px;}
 .closed-stat-label{font-family:var(--sans);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.33);font-weight:600;}
-.closed-tabs{display:flex;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.09);}
-.closed-tab{padding:11px 24px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.33);cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.2s;}
-.closed-tab.active{color:var(--gold);border-bottom-color:var(--gold);}
-
-/* Horizontal scroll carousel for closed deals */
 .closed-carousel-wrap{position:relative;}
 .closed-carousel{display:flex;gap:2px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:4px;scrollbar-width:none;}
 .closed-carousel::-webkit-scrollbar{display:none;}
-.closed-card{background:#0d1f3a;border:1px solid rgba(255,255,255,0.07);flex:0 0 280px;display:flex;flex-direction:column;cursor:pointer;transition:all 0.28s;}
-.closed-card:hover{border-color:rgba(193,160,30,0.38);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,0.5);}
+.closed-card{background:#0d1f3a;border:1px solid rgba(255,255,255,0.07);flex:0 0 280px;display:flex;flex-direction:column;cursor:pointer;transition:border-color 0.25s,box-shadow 0.25s;}
+.closed-card:hover{border-color:rgba(193,160,30,0.38);box-shadow:0 18px 40px rgba(0,0,0,0.5);}
 .closed-card.pending-card-style{border-color:rgba(224,123,0,0.25);background:#1a0e00;}
 .closed-card.pending-card-style:hover{border-color:rgba(224,123,0,0.5);}
 .closed-card-img{height:160px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0a1a3a;flex-shrink:0;}
@@ -150,19 +160,18 @@ section{padding:84px 72px;}
 .badge-sold{background:rgba(193,160,30,0.85);color:#041E42;}
 .badge-pend{background:rgba(224,123,0,0.9);color:#fff;}
 .badge-leased{background:rgba(26,107,60,0.9);color:#fff;}
-.badge-rented{background:rgba(255,255,255,0.2);color:#fff;}
+.badge-rented{background:rgba(255,255,255,0.2);color:#fff;border:1px solid rgba(255,255,255,0.3);}
 .closed-card-body{padding:18px;flex:1;display:flex;flex-direction:column;}
 .closed-card-type{font-family:var(--sans);font-size:8.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;opacity:0.7;}
 .closed-card-addr{font-family:var(--serif-display);font-size:16px;font-weight:500;color:#fff;margin-bottom:8px;line-height:1.2;}
-.closed-card-price{font-family:var(--serif-display);font-size:21px;color:var(--gold);margin-top:auto;padding-top:10px;border-top:1px solid rgba(255,255,255,0.07);}
+.closed-card-desc{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.42);line-height:1.7;font-weight:300;flex:1;}
+.closed-card-price{font-family:var(--serif-display);font-size:20px;color:var(--gold);margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.07);}
 .closed-card-price.pending-price{color:var(--pending);}
-
-/* Carousel nav arrows */
-.carousel-nav{display:flex;gap:8px;margin-top:16px;justify-content:flex-end;}
+.carousel-nav{display:flex;gap:8px;margin-top:14px;justify-content:flex-end;}
 .carousel-btn{width:36px;height:36px;border:1px solid rgba(193,160,30,0.3);background:transparent;color:rgba(193,160,30,0.8);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
 .carousel-btn:hover{background:var(--gold-pale);border-color:var(--gold);color:var(--gold);}
 
-/* TEAM — all 5 on one row, photos showing full head */
+/* TEAM */
 #team{background:#0d0d0d;}
 .team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;}
 .team-card{background:#141414;border:1px solid rgba(255,255,255,0.055);overflow:hidden;transition:border-color 0.3s;display:flex;flex-direction:column;}
@@ -183,7 +192,16 @@ section{padding:84px 72px;}
 .gli-seal{width:56px;height:56px;object-fit:contain;}
 .gli-brand-name{font-family:var(--serif-display);font-size:24px;font-weight:500;color:#fff;}
 .gli-brand-sub{font-family:var(--sans);font-size:8.5px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);opacity:0.72;margin-top:3px;}
-.gli-quote{font-family:var(--serif);font-size:clamp(16px,2vw,22px);font-weight:400;font-style:italic;color:rgba(255,255,255,0.78);line-height:1.6;border-left:2px solid var(--gold);padding-left:24px;margin-bottom:48px;max-width:660px;}
+
+/* GLI quote + assembly images side by side */
+.gli-quote-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:52px;}
+.gli-quote{font-family:var(--serif);font-size:clamp(16px,1.9vw,22px);font-weight:400;font-style:italic;color:rgba(255,255,255,0.78);line-height:1.6;border-left:2px solid var(--gold);padding-left:24px;}
+.gli-assembly-images{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;}
+.gli-assembly-item{position:relative;overflow:hidden;aspect-ratio:4/3;}
+.gli-assembly-item img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.75);transition:filter 0.3s;}
+.gli-assembly-item:hover img{filter:brightness(0.9);}
+.gli-assembly-label{position:absolute;bottom:0;left:0;right:0;padding:10px 12px;background:linear-gradient(to top,rgba(4,30,66,0.9),transparent);font-family:var(--serif-display);font-size:13px;font-weight:500;font-style:italic;color:#fff;line-height:1.2;}
+
 .gli-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:52px;}
 .gli-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(193,160,30,0.09);padding:24px 18px;text-align:center;}
 .gli-stat-num{font-family:var(--serif-display);font-size:32px;font-weight:400;color:var(--gold);margin-bottom:7px;}
@@ -241,15 +259,16 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity 0.75s ease,transform 0.75s ease;}
 .fade-up.visible{opacity:1;transform:translateY(0);}
 
-@media(max-width:1100px){.team-grid{grid-template-columns:repeat(5,1fr);}}
+@media(max-width:1100px){.team-grid{grid-template-columns:repeat(3,1fr) !important;}}
 @media(max-width:960px){
   nav{padding:0 20px;}.nav-links{display:none;}
   section,#contact{padding:52px 24px;}
   #about-me{padding:52px 24px;grid-template-columns:1fr;gap:20px;}
   .about-creds{grid-template-columns:1fr 1fr;}
   .stats-bar{grid-template-columns:repeat(2,1fr);}
-  .closed-summary,.gli-stats-row{grid-template-columns:1fr 1fr;}
-  .team-grid{grid-template-columns:repeat(3,1fr);}
+  .gli-stats-row{grid-template-columns:1fr 1fr;}
+  .gli-quote-row{grid-template-columns:1fr;gap:24px;}
+  .team-grid{grid-template-columns:repeat(2,1fr) !important;}
   footer{padding:26px 24px;}.footer-links{display:none;}
   .map-label{left:20px;top:60px;}.map-legend{bottom:12px;right:12px;}
   #contact{grid-template-columns:1fr;gap:36px;}
@@ -281,8 +300,8 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   <video id="hero-video" src="https://res.cloudinary.com/dq1n9kjox/video/upload/v1779508592/Video_for_website_suwraf.mp4" autoplay muted loop playsinline preload="auto"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Miami · South Florida</p>
-    <h1 class="hero-h1">Brokering the deals of tomorrow. <em>Today.</em></h1>
+    <p class="hero-eyebrow">Miami &nbsp;·&nbsp; South Florida</p>
+    <h1 class="hero-h1">Brokering the deals of tomorrow.<br><em>Today.</em></h1>
     <div class="hero-btns">
       <a href="active.html" class="btn-primary">View Active Listings</a>
       <a href="#closed" class="btn-ghost">See Closed Deals</a>
@@ -327,7 +346,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   </div>
 </div>
 
-<!-- MAP -->
+<!-- MAP with filter controls -->
 <div id="map-section">
   <div id="map"></div>
   <div class="map-overlay"></div>
@@ -335,10 +354,16 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <p class="map-eyebrow">Full Market View</p>
     <h2>Listings &amp; Closed<br><em>Deals on the Map</em></h2>
   </div>
+  <div class="map-controls">
+    <button class="map-filter-btn active" onclick="setMapFilter('all',this)">All Deals</button>
+    <button class="map-filter-btn" onclick="setMapFilter('active',this)">Active Only</button>
+    <button class="map-filter-btn" onclick="setMapFilter('sold',this)">Sold</button>
+    <button class="map-filter-btn" onclick="setMapFilter('leased',this)">Leased / Rented</button>
+  </div>
   <div class="map-legend">
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:#C1A01E;"></div><span class="map-legend-label">Active · For Sale</span></div>
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1a6b3c;"></div><span class="map-legend-label">Active · For Rent</span></div>
-    <div class="map-legend-item"><div class="map-legend-dot" style="background:rgba(193,160,30,0.6);"></div><span class="map-legend-label">Sold</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#C1A01E;"></div><span class="map-legend-label">Active · Sale</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:#1a6b3c;"></div><span class="map-legend-label">Active · Rent</span></div>
+    <div class="map-legend-item"><div class="map-legend-dot" style="background:rgba(193,160,30,0.6);border-radius:50%;"></div><span class="map-legend-label">Sold</span></div>
     <div class="map-legend-item"><div class="map-legend-dot" style="background:rgba(255,255,255,0.4);"></div><span class="map-legend-label">Leased / Rented</span></div>
   </div>
 </div>
@@ -358,7 +383,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   <div class="listings-grid fade-up" id="listings-grid"></div>
 </section>
 
-<!-- CLOSED + PENDING — horizontal carousel -->
+<!-- CLOSED + PENDING CAROUSEL -->
 <section id="closed">
   <div class="section-header fade-up">
     <div><p class="section-eyebrow">Track Record</p><h2 class="section-title">Pending &amp; <em>Sold</em></h2></div>
@@ -369,8 +394,6 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <div class="closed-stat"><div class="closed-stat-num">$742K</div><div class="closed-stat-label">Lease Volume</div></div>
     <div class="closed-stat"><div class="closed-stat-num">$226K</div><div class="closed-stat-label">Annualized Rental Volume</div></div>
   </div>
-
-  <!-- All deals in one horizontal carousel — pending first (orange), then sold (gold), then leased/rented -->
   <div class="closed-carousel-wrap fade-up">
     <div class="closed-carousel" id="main-carousel"></div>
     <div class="carousel-nav">
@@ -380,7 +403,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   </div>
 </section>
 
-<!-- TEAM — all 5 on one row -->
+<!-- TEAM -->
 <section id="team">
   <div class="fade-up">
     <p class="section-eyebrow">Global Investments Realty</p>
@@ -448,7 +471,26 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <p class="section-eyebrow">Brokerage Track Record</p>
     <h2 class="section-title">GLI <em>Notable Deals</em></h2>
   </div>
-  <p class="gli-quote fade-up">"Before the handshake, there was your word and your reputation. We hold those values dear to our core and operate from the standpoint that they will survive long after the deal is closed."</p>
+
+  <!-- Quote left + assembly images right -->
+  <div class="gli-quote-row fade-up">
+    <p class="gli-quote">"Before the handshake, there was your word and your reputation. We hold those values dear to our core and operate from the standpoint that they will survive long after the deal is closed."</p>
+    <div class="gli-assembly-images">
+      <div class="gli-assembly-item">
+        <img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517459/copy_of_aria_on_the_bay_assemblage_1_pgn0am.webp" alt="Aria on the Bay Assemblage" loading="lazy">
+        <div class="gli-assembly-label">Aria on the Bay<br>Assemblage</div>
+      </div>
+      <div class="gli-assembly-item">
+        <img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517505/copy_2of_missoni_baia_assemblage-2_fqjkzh.webp" alt="Missoni Baia Assemblage" loading="lazy">
+        <div class="gli-assembly-label">Missoni Baia<br>Assemblage</div>
+      </div>
+      <div class="gli-assembly-item">
+        <img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517302/copy_of_biscayne_beach_assmeblage_hg2gsv.webp" alt="Biscayne Beach Assemblage" loading="lazy">
+        <div class="gli-assembly-label">Biscayne Beach<br>Assemblage</div>
+      </div>
+    </div>
+  </div>
+
   <div class="gli-stats-row fade-up">
     <div class="gli-stat"><div class="gli-stat-num">$1B+</div><div class="gli-stat-label">Closed Volume</div></div>
     <div class="gli-stat"><div class="gli-stat-num">30+</div><div class="gli-stat-label">Years in Business</div></div>
@@ -531,13 +573,14 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
 
 <script>
 let DATA = null;
+// Store all map markers for filtering
+let allMarkers = { active: [], sold: [], leased: [] };
 
 fetch('listings.json')
   .then(r => r.json())
   .then(d => { DATA = d; renderListings(d); renderCarousel(d); initMap(d); })
   .catch(() => initMapNoPins());
 
-// ── ACTIVE LISTINGS
 function renderListings(d) {
   document.getElementById('listings-grid').innerHTML = d.active.map(l => `
     <div class="listing-card" data-tags="${l.tags.join(' ')}" onclick="openModal('${l.id}','active')">
@@ -554,92 +597,47 @@ function renderListings(d) {
         <div class="card-highlights">${l.highlights.slice(0,4).map(h=>`<span class="highlight-tag">${h}</span>`).join('')}</div>
         <div class="card-footer"><span class="card-price">${l.priceDisplay}</span><span class="card-note">${l.priceNote}</span></div>
       </div>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
 
-// ── CAROUSEL: pending (orange) first, then sold, then leased, then rented
 function renderCarousel(d) {
   const carousel = document.getElementById('main-carousel');
   let cards = [];
-
-  // Pending — orange badge
   (d.pending||[]).forEach(l => {
-    cards.push(`
-      <div class="closed-card pending-card-style" onclick="openModal('${l.id}','pending')">
-        <div class="closed-card-img">
-          ${l.imageUrl ? `<img src="${l.imageUrl}" alt="${l.address}" loading="lazy">` : ''}
-          <span class="closed-card-badge badge-pend">Pending</span>
-        </div>
-        <div class="closed-card-body">
-          <p class="closed-card-type">${l.type}</p>
-          <p class="closed-card-addr">${l.address}</p>
-          <p style="font-family:var(--sans);font-size:10.5px;color:rgba(255,255,255,0.38);font-weight:300;margin-bottom:6px;">${l.city}</p>
-          ${l.description ? `<p style="font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300;flex:1;">${l.description}</p>` : ''}
-          <p class="closed-card-price pending-price">${l.priceDisplay}</p>
-        </div>
-      </div>`);
+    cards.push(`<div class="closed-card pending-card-style" onclick="openModal('${l.id}','pending')">
+      <div class="closed-card-img">${l.imageUrl?`<img src="${l.imageUrl}" alt="${l.address}" loading="lazy">`:''}<span class="closed-card-badge badge-pend">Pending</span></div>
+      <div class="closed-card-body"><p class="closed-card-type">${l.type}</p><p class="closed-card-addr">${l.address}</p>
+      ${l.description?`<p class="closed-card-desc">${l.description.substring(0,80)}...</p>`:''}
+      <p class="closed-card-price pending-price">${l.priceDisplay}</p></div></div>`);
   });
-
-  // Sales — gold dots
   (d.closed.sales||[]).forEach(i => {
-    cards.push(`
-      <div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
-        <div class="closed-card-img">
-          ${i.imageUrl ? `<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">` : ''}
-          <span class="closed-card-badge badge-sold">Sold</span>
-        </div>
-        <div class="closed-card-body">
-          <p class="closed-card-type">${i.type}${i.neighborhood ? ' · '+i.neighborhood : ''}</p>
-          <p class="closed-card-addr">${i.address}</p>
-          ${i.description ? `<p style="font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300;flex:1;margin-top:6px;">${i.description.substring(0,90)}...</p>` : ''}
-          <p class="closed-card-price">${i.price}</p>
-        </div>
-      </div>`);
+    cards.push(`<div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
+      <div class="closed-card-img">${i.imageUrl?`<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">`:''}<span class="closed-card-badge badge-sold">Sold</span></div>
+      <div class="closed-card-body"><p class="closed-card-type">${i.type}${i.neighborhood?' · '+i.neighborhood:''}</p><p class="closed-card-addr">${i.address}</p>
+      ${i.description?`<p class="closed-card-desc">${i.description.substring(0,80)}...</p>`:''}
+      <p class="closed-card-price">${i.price}</p></div></div>`);
   });
-
-  // Leases
   (d.closed.leases||[]).forEach(i => {
-    cards.push(`
-      <div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
-        <div class="closed-card-img">
-          ${i.imageUrl ? `<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">` : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;opacity:0.2;font-family:var(--serif-display);font-size:32px;color:var(--gold);">Lease</div>'}
-          <span class="closed-card-badge badge-leased">Leased</span>
-        </div>
-        <div class="closed-card-body">
-          <p class="closed-card-type">${i.type}</p>
-          <p class="closed-card-addr">${i.address}</p>
-          ${i.description ? `<p style="font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300;flex:1;margin-top:6px;">${i.description.substring(0,90)}...</p>` : ''}
-          <p class="closed-card-price">${i.price}</p>
-        </div>
-      </div>`);
+    cards.push(`<div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
+      <div class="closed-card-img">${i.imageUrl?`<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">`:'<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;opacity:0.2;font-family:var(--serif-display);font-size:28px;color:var(--gold);">Lease</div>'}<span class="closed-card-badge badge-leased">Leased</span></div>
+      <div class="closed-card-body"><p class="closed-card-type">${i.type}</p><p class="closed-card-addr">${i.address}</p>
+      ${i.description?`<p class="closed-card-desc">${i.description.substring(0,80)}...</p>`:''}
+      <p class="closed-card-price">${i.price}</p></div></div>`);
   });
-
-  // Rentals
   (d.closed.rentals||[]).forEach(i => {
-    cards.push(`
-      <div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
-        <div class="closed-card-img">
-          ${i.imageUrl ? `<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">` : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;opacity:0.2;font-family:var(--serif-display);font-size:32px;color:var(--gold);">Rental</div>'}
-          <span class="closed-card-badge badge-rented">Rented</span>
-        </div>
-        <div class="closed-card-body">
-          <p class="closed-card-type">${i.type}</p>
-          <p class="closed-card-addr">${i.address}</p>
-          <p class="closed-card-price">${i.price}</p>
-        </div>
-      </div>`);
+    cards.push(`<div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
+      <div class="closed-card-img">${i.imageUrl?`<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">`:'<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;opacity:0.2;font-family:var(--serif-display);font-size:28px;color:var(--gold);">Rental</div>'}<span class="closed-card-badge badge-rented">Rented</span></div>
+      <div class="closed-card-body"><p class="closed-card-type">${i.type}</p><p class="closed-card-addr">${i.address}</p>
+      <p class="closed-card-price">${i.price}</p></div></div>`);
   });
-
   carousel.innerHTML = cards.join('');
 }
 
 function scrollCarousel(id, dir) {
-  const el = document.getElementById(id);
-  el.scrollBy({left: dir * 292, behavior: 'smooth'});
+  document.getElementById(id).scrollBy({left: dir * 292, behavior: 'smooth'});
 }
 
-// ── MODALS
+// MODALS
 function openModal(id, pool) {
   const src = pool === 'active' ? DATA?.active : DATA?.pending;
   const l = src?.find(x => x.id === id);
@@ -688,68 +686,93 @@ function closeModal() { document.getElementById('modal-overlay').style.display='
 function handleOverlayClick(e) { if(e.target===document.getElementById('modal-overlay')) closeModal(); }
 document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
-// ── MAP
+// MAP — fixed: no transform on hover (causes spazzing), use CSS pointer events only
+// All pins stored for filter toggling
 function initMap(d) {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZW1jYzEwIiwiYSI6ImNtcGhxMnN0ZDAxZHcyd29yOWJrbHBsMXgifQ.XY6EeztU8KfuxxDq1X35JQ';
-  const map = new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/dark-v11',center:[-80.22,25.78],zoom:10,pitch:45,bearing:-10,antialias:true});
-  let b=-10;
-  map.on('load',()=>{
-    (function spin(){b+=0.012;map.setBearing(b%360);requestAnimationFrame(spin);})();
+  const map = new mapboxgl.Map({
+    container:'map', style:'mapbox://styles/mapbox/dark-v11',
+    center:[-80.22,25.78], zoom:10, pitch:45, bearing:-10, antialias:true
+  });
+  let b = -10;
+
+  map.on('load', () => {
+    (function spin(){ b+=0.012; map.setBearing(b%360); requestAnimationFrame(spin); })();
     map.addLayer({id:'bldgs',source:'composite','source-layer':'building',filter:['==','extrude','true'],type:'fill-extrusion',minzoom:10,
       paint:{'fill-extrusion-color':'#0a1a3a','fill-extrusion-height':['get','height'],'fill-extrusion-base':['get','min_height'],'fill-extrusion-opacity':0.75}});
-    d.active.forEach(l=>{
-      const el=document.createElement('div');
-      const sale=l.badgeType==='sale';
-      el.style.cssText=`background:${sale?'#C1A01E':'#1a6b3c'};color:${sale?'#041E42':'#fff'};padding:6px 12px;font-size:10px;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.6);white-space:nowrap;transition:transform 0.15s;`;
-      el.textContent=l.mapLabel;
-      el.addEventListener('mouseenter',()=>el.style.transform='scale(1.08)');
-      el.addEventListener('mouseleave',()=>el.style.transform='scale(1)');
-      el.addEventListener('click',()=>openModal(l.id,'active'));
-      new mapboxgl.Marker({element:el}).setLngLat(l.coords).addTo(map);
+
+    // ACTIVE — label pins, no transform (fixes spazzing)
+    d.active.forEach(l => {
+      const el = document.createElement('div');
+      const sale = l.badgeType === 'sale';
+      el.style.cssText = `background:${sale?'#C1A01E':'#1a6b3c'};color:${sale?'#041E42':'#fff'};padding:6px 12px;font-size:10px;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,0.6);white-space:nowrap;letter-spacing:0.04em;`;
+      el.textContent = l.mapLabel;
+      el.addEventListener('click', () => openModal(l.id, 'active'));
+      const marker = new mapboxgl.Marker({element:el}).setLngLat(l.coords).addTo(map);
+      allMarkers.active.push({ marker, el });
     });
-    (d.closed.sales||[]).filter(i=>i.coords).forEach(i=>{
-      const el=document.createElement('div');
-      el.style.cssText='width:11px;height:11px;background:rgba(193,160,30,0.75);border:1.5px solid #C1A01E;border-radius:50%;cursor:pointer;transition:transform 0.15s;';
-      el.title=`SOLD: ${i.address} · ${i.price}`;
-      el.addEventListener('mouseenter',()=>el.style.transform='scale(1.6)');
-      el.addEventListener('mouseleave',()=>el.style.transform='scale(1)');
-      el.addEventListener('click',()=>openClosedModal(i));
-      new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
+
+    // SOLD — dot pins, scale via CSS box-shadow on hover instead of transform
+    (d.closed.sales||[]).filter(i=>i.coords).forEach(i => {
+      const el = document.createElement('div');
+      el.style.cssText = 'width:12px;height:12px;background:rgba(193,160,30,0.8);border:1.5px solid #C1A01E;border-radius:50%;cursor:pointer;';
+      el.title = `SOLD: ${i.address} · ${i.price}`;
+      el.addEventListener('mouseenter', () => { el.style.background='#C1A01E'; el.style.width='16px'; el.style.height='16px'; el.style.marginLeft='-2px'; el.style.marginTop='-2px'; });
+      el.addEventListener('mouseleave', () => { el.style.background='rgba(193,160,30,0.8)'; el.style.width='12px'; el.style.height='12px'; el.style.marginLeft='0'; el.style.marginTop='0'; });
+      el.addEventListener('click', () => openClosedModal(i));
+      const marker = new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
+      allMarkers.sold.push({ marker, el });
     });
-    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i=>{
-      const el=document.createElement('div');
-      el.style.cssText='width:9px;height:9px;background:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.65);border-radius:50%;cursor:pointer;transition:transform 0.15s;';
-      el.title=`${i.type}: ${i.address} · ${i.price}`;
-      el.addEventListener('mouseenter',()=>el.style.transform='scale(1.6)');
-      el.addEventListener('mouseleave',()=>el.style.transform='scale(1)');
-      el.addEventListener('click',()=>openClosedModal(i));
-      new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
+
+    // LEASED + RENTED
+    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i => {
+      const el = document.createElement('div');
+      el.style.cssText = 'width:10px;height:10px;background:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.65);border-radius:50%;cursor:pointer;';
+      el.title = `${i.type}: ${i.address} · ${i.price}`;
+      el.addEventListener('mouseenter', () => { el.style.background='rgba(255,255,255,0.8)'; el.style.width='14px'; el.style.height='14px'; el.style.marginLeft='-2px'; el.style.marginTop='-2px'; });
+      el.addEventListener('mouseleave', () => { el.style.background='rgba(255,255,255,0.4)'; el.style.width='10px'; el.style.height='10px'; el.style.marginLeft='0'; el.style.marginTop='0'; });
+      el.addEventListener('click', () => openClosedModal(i));
+      const marker = new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
+      allMarkers.leased.push({ marker, el });
     });
   });
 }
-function initMapNoPins(){
-  mapboxgl.accessToken='pk.eyJ1IjoibWlrZW1jYzEwIiwiYSI6ImNtcGhxMnN0ZDAxZHcyd29yOWJrbHBsMXgifQ.XY6EeztU8KfuxxDq1X35JQ';
-  const map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/dark-v11',center:[-80.22,25.78],zoom:10,pitch:45,bearing:-10,antialias:true});
-  let b=-10; map.on('load',()=>{(function spin(){b+=0.012;map.setBearing(b%360);requestAnimationFrame(spin);})();});
+
+// Map filter — show/hide marker groups
+function setMapFilter(type, btn) {
+  document.querySelectorAll('.map-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const show = (group) => group.forEach(m => m.el.style.display = '');
+  const hide = (group) => group.forEach(m => m.el.style.display = 'none');
+  if (type === 'all') { show(allMarkers.active); show(allMarkers.sold); show(allMarkers.leased); }
+  else if (type === 'active') { show(allMarkers.active); hide(allMarkers.sold); hide(allMarkers.leased); }
+  else if (type === 'sold') { hide(allMarkers.active); show(allMarkers.sold); hide(allMarkers.leased); }
+  else if (type === 'leased') { hide(allMarkers.active); hide(allMarkers.sold); show(allMarkers.leased); }
 }
 
-function filterListings(tag,btn){
+function initMapNoPins() {
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZW1jYzEwIiwiYSI6ImNtcGhxMnN0ZDAxZHcyd29yOWJrbHBsMXgifQ.XY6EeztU8KfuxxDq1X35JQ';
+  const map = new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/dark-v11',center:[-80.22,25.78],zoom:10,pitch:45,bearing:-10,antialias:true});
+  let b=-10; map.on('load',()=>{ (function spin(){b+=0.012;map.setBearing(b%360);requestAnimationFrame(spin);})(); });
+}
+
+function filterListings(tag,btn) {
   document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.listing-card').forEach(c=>{c.style.display=(tag==='all'||c.dataset.tags.includes(tag))?'flex':'none';});
+  document.querySelectorAll('.listing-card').forEach(c=>{ c.style.display=(tag==='all'||c.dataset.tags.includes(tag))?'flex':'none'; });
 }
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.07});
+const obs = new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); }); },{threshold:0.07});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 window.addEventListener('scroll',()=>{
   const nav=document.getElementById('navbar');
   nav.style.height=window.scrollY>80?'58px':'68px';
   nav.style.background=window.scrollY>80?'rgba(4,30,66,0.98)':'rgba(4,30,66,0.93)';
 });
-function handleSubmit(e){
+function handleSubmit(e) {
   e.preventDefault();
   const btn=e.target.querySelector('button[type=submit]');
-  btn.textContent='Message Sent ✓';btn.style.background='#1a6b3c';btn.style.color='#fff';
-  setTimeout(()=>{btn.textContent='Send Message';btn.style.background='';btn.style.color='';e.target.reset();},3000);
+  btn.textContent='Message Sent ✓'; btn.style.background='#1a6b3c'; btn.style.color='#fff';
+  setTimeout(()=>{ btn.textContent='Send Message'; btn.style.background=''; btn.style.color=''; e.target.reset(); },3000);
 }
 </script>
 </body>
