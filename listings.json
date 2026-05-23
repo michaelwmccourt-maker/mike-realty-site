@@ -1,3 +1,4 @@
+
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -220,7 +221,7 @@
       "price": 399000,
       "priceDisplay": "$399,000",
       "priceNote": "",
-      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779512135/4361_fyqdb7.jpg",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517805/4361_NW_35th_Ter_hqyzuf.jpg",
       "imageBg": "linear-gradient(135deg,#1a1000,#2d2000)",
       "description": "3BR/2BA CBS home with 1-car garage in quiet Oriole Estates. Large fenced backyard, Florida room, great natural light. Strong primary residence or long-term investment play.",
       "highlights": [
@@ -241,6 +242,42 @@
         "Garage": "1-Car"
       },
       "terms": "All Cash · Conventional · FHA"
+    },
+    {
+      "id": "11430-ne-13th",
+      "status": "pending",
+      "badge": "Under Contract",
+      "badgeType": "pending",
+      "tags": [
+        "sale"
+      ],
+      "neighborhood": "Biscayne Park",
+      "city": "Miami, FL 33161",
+      "address": "11430 NE 13th Ave",
+      "type": "Residential",
+      "mlsId": "",
+      "price": 950000,
+      "priceDisplay": "$950,000",
+      "priceNote": "",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779521489/11430_ne_13_wlc3xk.jpg",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1782,
+        25.8712
+      ],
+      "mapLabel": "$950K · 11430 NE 13th",
+      "description": "Residential property in Biscayne Park under contract at $950,000.",
+      "highlights": [
+        "Biscayne Park",
+        "Under Contract",
+        "$950,000"
+      ],
+      "specs": {
+        "Neighborhood": "Biscayne Park",
+        "Price": "$950,000",
+        "Status": "Under Contract"
+      },
+      "terms": "TBD"
     }
   ],
   "closed": {
@@ -525,22 +562,7 @@
         ],
         "mapLabel": "$617,500 · 10601 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
-      },
-      {
-        "address": "4361 NW 35th Ter",
-        "type": "Condominium",
-        "price": "$330,000",
-        "coords": [
-          -80.2101,
-          26.1726
-        ],
-        "mapLabel": "$330,000 · 4361 NW",
-        "mapType": "sold",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517753/10601_sw_184_nntbps.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -601,6 +623,32 @@
           "Sale Price": "$550,000",
           "Status": "Sold"
         }
+      },
+      {
+        "address": "13151 SW 62 Ter Unit 103",
+        "type": "Condominium",
+        "price": "TBD",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779521609/13151_SW_62_TER_UNIT_103_u1zq3a.jpg",
+        "coords": [
+          -80.3412,
+          25.6958
+        ],
+        "mapLabel": "Sold · 13151 SW 62 Ter",
+        "mapType": "sold",
+        "neighborhood": "Kendall",
+        "city": "Miami, FL 33183",
+        "description": "Condominium sale in Kendall — Unit 103 at 13151 SW 62 Ter.",
+        "highlights": [
+          "Condominium",
+          "Unit 103",
+          "Kendall"
+        ],
+        "specs": {
+          "Type": "Condominium",
+          "Unit": "103",
+          "Neighborhood": "Kendall",
+          "Status": "Sold"
+        }
       }
     ],
     "leases": [
@@ -614,10 +662,20 @@
         ],
         "mapLabel": "$66,000 · 8411 Biscayne Blvd",
         "mapType": "leased",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517944/8411_biscayne_blvd_nafkvn.jpg",
+        "description": "Commercial retail lease at 8411 Biscayne Blvd — 1,100 SF of retail space leased at $2,750/month. High-visibility Biscayne Blvd corridor location in Miami's Upper East Side.",
+        "highlights": [
+          "1,100 SF retail",
+          "$2,750/month",
+          "Biscayne Blvd frontage",
+          "Upper East Side"
+        ],
+        "specs": {
+          "Type": "Retail Lease",
+          "SF": "1,100",
+          "Monthly Rent": "$2,750",
+          "Location": "Biscayne Blvd"
+        }
       },
       {
         "address": "Byte & Brew — Dadeland Mall",
@@ -655,7 +713,7 @@
         ],
         "mapLabel": "$191,129 · 3204 NE 2nd Ave",
         "mapType": "leased",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518009/3204_ne_2_aal6ag.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -670,7 +728,7 @@
         ],
         "mapLabel": "$412,700 · 3206 NE 2nd Ave",
         "mapType": "leased",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518018/3206_ne_2_copy_mf0anx.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -687,7 +745,7 @@
         ],
         "mapLabel": "$2,650/mo · 1081 NE 41st Ter",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518084/rental_1081_NE_41st_Ter_sjerxr.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -702,13 +760,13 @@
         ],
         "mapLabel": "$2,200/mo · 151 SE 1st St",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518239/151_SE_1st_St_djpdbj.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
       },
       {
-        "address": "227 NE 25th St",
+        "address": "229 NE 25th St",
         "type": "Rental Placed",
         "price": "$1,500/mo",
         "coords": [
@@ -717,7 +775,7 @@
         ],
         "mapLabel": "$1,500/mo · 227 NE 25th St",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518362/229_ne_25th_qmczfz.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -732,7 +790,7 @@
         ],
         "mapLabel": "$1,975/mo · 1255 Collins Ave #50",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518451/501_islander_nuturo.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -747,7 +805,7 @@
         ],
         "mapLabel": "$5,200/mo · 13345 SW 83rd Ct",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518502/13345_SW_83rd_Ct_cx6kaj.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -762,7 +820,7 @@
         ],
         "mapLabel": "$1,600/mo · 437 NE 30th St #4",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518540/437_NE_30th_St_4_isy4fz.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -777,7 +835,7 @@
         ],
         "mapLabel": "$1,000/mo · 6326 NW 4th Ave #2",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518633/6326_nw_4_no2_yyuhvh.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -792,7 +850,7 @@
         ],
         "mapLabel": "$1,200/mo · 6326 NW 4th Ave #4",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518630/6326_nw_4_no4_pb34qq.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
@@ -807,10 +865,55 @@
         ],
         "mapLabel": "$1,500/mo · 6326 NW 4th Ave #1",
         "mapType": "rented",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518632/6326_nw_4_no1_xpeh7k.jpg",
         "description": "",
         "highlights": [],
         "specs": {}
+      },
+      {
+        "address": "3071 SW 27th Ave Unit #19",
+        "type": "Rental Placed",
+        "price": "$2,000/mo",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779521808/3071_SW_27th_Ave_19_lecdtl.jpg",
+        "coords": [
+          -80.2432,
+          25.7423
+        ],
+        "mapLabel": "$2,000/mo · 3071 SW 27th",
+        "mapType": "rented",
+        "description": "Rental placed at Coco Palm Condo — $2,000/month.",
+        "highlights": [
+          "Coco Palm Condo",
+          "$2,000/month"
+        ],
+        "specs": {
+          "Type": "Rental",
+          "Monthly": "$2,000",
+          "Building": "Coco Palm Condo"
+        }
+      },
+      {
+        "address": "830 10th St Unit 2",
+        "type": "Rental Placed",
+        "price": "$2,200/mo",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779521888/830_10_st_mxhmpj.jpg",
+        "coords": [
+          -80.1412,
+          25.781
+        ],
+        "mapLabel": "$2,200/mo · 830 10th St",
+        "mapType": "rented",
+        "description": "Rental placed at The Lorena Condo, Miami Beach — $2,200/month.",
+        "highlights": [
+          "The Lorena Condo",
+          "$2,200/month",
+          "Miami Beach"
+        ],
+        "specs": {
+          "Type": "Rental",
+          "Monthly": "$2,200",
+          "Building": "The Lorena Condo"
+        }
       }
     ]
   }
