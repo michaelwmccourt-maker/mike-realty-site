@@ -28,7 +28,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:0.06em;font-style:italic;transition:color 0.2s;}
 .nav-links a:hover{color:var(--gold);}
 .nav-right{display:flex;align-items:center;gap:14px;}
-.nav-phone{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,0.45);font-weight:300;letter-spacing:0.05em;}
+.nav-phone{font-family:var(--sans);font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.05em;}
 .btn-nav{background:var(--gold);color:var(--navy);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;display:inline-block;}
 .btn-nav:hover{background:var(--gold-light);}
 
@@ -36,7 +36,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;}
 #hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,30,66,0.25) 0%,rgba(4,30,66,0.1) 35%,rgba(4,30,66,0.52) 72%,rgba(4,30,66,0.9) 100%);pointer-events:none;}
-.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;}
+.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;padding-bottom:12vh;}
 
 /* Eyebrow — 1/3 the size of the main headline */
 .hero-eyebrow{
@@ -116,9 +116,11 @@ section{padding:84px 72px;}
 .listings-filter{display:flex;gap:8px;margin-bottom:36px;flex-wrap:wrap;}
 .filter-btn{padding:7px 18px;border:1px solid rgba(255,255,255,0.13);background:transparent;color:rgba(255,255,255,0.48);font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;}
 .filter-btn:hover,.filter-btn.active{border-color:var(--gold);color:var(--gold);background:var(--gold-pale);}
-.listings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px;}
-.listing-card{background:#141414;border:1px solid rgba(255,255,255,0.055);overflow:hidden;transition:all 0.32s;cursor:pointer;display:flex;flex-direction:column;}
-.listing-card:hover{border-color:rgba(193,160,30,0.4);transform:translateY(-5px);box-shadow:0 22px 52px rgba(0,0,0,0.48);}
+.listings-grid{display:flex;gap:2px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:4px;scrollbar-width:none;}
+.listings-grid::-webkit-scrollbar{display:none;}
+.listing-card{flex:0 0 300px;}
+.listing-card{background:#141414;border:1px solid rgba(255,255,255,0.055);overflow:hidden;transition:all 0.32s;cursor:pointer;display:flex;flex-direction:column;flex:0 0 320px;}
+.listing-card:hover{border-color:rgba(193,160,30,0.4);transform:translateY(-3px);box-shadow:0 22px 52px rgba(0,0,0,0.48);}
 .card-img{height:195px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .card-img-placeholder{display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.2;position:relative;z-index:1;}
@@ -205,8 +207,10 @@ section{padding:84px 72px;}
 .gli-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(193,160,30,0.09);padding:24px 18px;text-align:center;}
 .gli-stat-num{font-family:var(--serif-display);font-size:32px;font-weight:400;color:var(--gold);margin-bottom:7px;}
 .gli-stat-label{font-family:var(--sans);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.33);font-weight:600;}
-.track-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2px;}
-.track-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.055);padding:20px;transition:all 0.22s;}
+.track-grid{display:flex;gap:2px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:4px;scrollbar-width:none;}
+.track-grid::-webkit-scrollbar{display:none;}
+.track-card{flex:0 0 220px;}
+.track-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.055);padding:20px;transition:all 0.22s;flex:0 0 220px;}
 .track-card:hover{border-color:rgba(193,160,30,0.28);background:rgba(193,160,30,0.048);}
 .track-type{font-family:var(--sans);font-size:8.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);opacity:0.58;margin-bottom:5px;}
 .track-name{font-family:var(--serif-display);font-size:16px;font-weight:500;color:#fff;margin-bottom:4px;line-height:1.2;}
@@ -289,7 +293,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <span class="nav-phone">305-635-3005</span>
+    <a href="tel:3056353005" class="nav-phone">305-635-3005</a>
     <a href="#contact" class="btn-nav">Get in Touch</a>
   </div>
 </nav>
@@ -379,7 +383,13 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <button class="filter-btn" onclick="filterListings('rent',this)">For Rent</button>
     <button class="filter-btn" onclick="filterListings('investment',this)">Investment</button>
   </div>
-  <div class="listings-grid fade-up" id="listings-grid"></div>
+  <div style="position:relative;">
+    <div class="listings-grid fade-up" id="listings-grid"></div>
+    <div class="carousel-nav" style="margin-top:14px;">
+      <button class="carousel-btn" onclick="scrollCarousel('listings-grid',-1)">&#8592;</button>
+      <button class="carousel-btn" onclick="scrollCarousel('listings-grid',1)">&#8594;</button>
+    </div>
+  </div>
 </section>
 
 <!-- CLOSED + PENDING CAROUSEL -->
@@ -414,7 +424,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
       <div class="team-card-body">
         <p class="team-role">Principal &amp; Broker</p>
         <h3 class="team-name">Joel Rodriguez</h3>
-        <p class="team-contact"><a href="tel:7862857739">786.285.7739</a><br><a href="mailto:joel@glirealty.com">joel@glirealty.com</a></p>
+        <p class="team-contact"><a href="mailto:joel@glirealty.com">joel@glirealty.com</a></p>
         <p class="team-desc">30+ years brokering Miami's most complex deals. Go-to broker for land assemblage, multifamily, and investment sales.</p>
       </div>
     </div>
@@ -423,7 +433,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
       <div class="team-card-body">
         <p class="team-role">Executive Agent</p>
         <h3 class="team-name">Michael McCourt</h3>
-        <p class="team-contact"><a href="tel:2039476368">203.947.6368</a><br><a href="mailto:michael@glirealty.com">michael@glirealty.com</a></p>
+        <p class="team-contact"><a href="mailto:michael@glirealty.com">michael@glirealty.com</a></p>
         <p class="team-desc">Primary contact for all transactions — negotiations, client updates, and weekly market reports every Monday.</p>
       </div>
     </div>
@@ -432,7 +442,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
       <div class="team-card-body">
         <p class="team-role">Executive Agent · Showings</p>
         <h3 class="team-name">Zoe Rodriguez</h3>
-        <p class="team-contact"><a href="tel:7862025047">786.202.5047</a><br><a href="mailto:zoe@glirealty.com">zoe@glirealty.com</a></p>
+        <p class="team-contact"><a href="mailto:zoe@glirealty.com">zoe@glirealty.com</a></p>
         <p class="team-desc">Coordinates all property tours, qualifies attendees, and ensures every showing leaves a lasting impression.</p>
       </div>
     </div>
@@ -496,7 +506,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <div class="gli-stat"><div class="gli-stat-num">#1</div><div class="gli-stat-label">Miami Land Sales · 17+ Yrs</div></div>
     <div class="gli-stat"><div class="gli-stat-num">$105M</div><div class="gli-stat-label">Largest Single Deal</div></div>
   </div>
-  <div class="track-grid fade-up">
+  <div class="track-grid fade-up" id="track-carousel">
     <div class="track-card"><p class="track-type">Multifamily Dev · 3 Acres</p><h3 class="track-name">1700 Biscayne Blvd</h3><p class="track-detail">Arts &amp; Entertainment District</p><p class="track-price">$105,000,000</p><a class="track-link" href="https://therealdeal.com/miami/2021/12/02/melo-group-buying-entire-block-in-arts-entertainment-district-for-105m-to-build-resi-towers/" target="_blank" rel="noopener">Read Coverage ↗</a></div>
     <div class="track-card"><p class="track-type">Multifamily Dev · 38,000 SF</p><h3 class="track-name">710 Edge — Edgewater</h3><p class="track-detail">Waterfront development assemblage</p><p class="track-price">Confidential</p><a class="track-link" href="https://therealdeal.com/miami/2022/01/28/one-thousand-museum-developers-complete-waterfront-edgewater-assemblage-for-doppelganger-tower/" target="_blank" rel="noopener">Read Coverage ↗</a></div>
     <div class="track-card"><p class="track-type">Land Assemblage · 35,000 SF</p><h3 class="track-name">Aria on the Bay North</h3><p class="track-detail">400+ buildable units · Edgewater</p><p class="track-price">$17,000,000</p><a class="track-link" href="https://therealdeal.com/miami/2021/08/31/melo-group-pays-17m-for-assemblage-north-of-downtown-miami/" target="_blank" rel="noopener">Read Coverage ↗</a></div>
@@ -516,6 +526,14 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <div class="track-card"><p class="track-type">Land Assemblage · 29,600 SF</p><h3 class="track-name">Allapattah 17</h3><p class="track-detail">14-story · 192 units</p><p class="track-price">$2,200,000</p><a class="track-link" href="https://therealdeal.com/miami/2019/08/07/lissette-calderon-scores-24m-construction-loan-for-allapattah-apartments/" target="_blank" rel="noopener">Read Coverage ↗</a></div>
     <div class="track-card"><p class="track-type">Commercial Office · 90,000 SF</p><h3 class="track-name">The Point at Doral</h3><p class="track-detail">Multi-story office park</p><p class="track-price">$8,750,000</p><a class="track-link" href="https://www.linkconstructiongroup.net/project-post/point-doral-office-park/" target="_blank" rel="noopener">Read Coverage ↗</a></div>
     <div class="track-card"><p class="track-type">Industrial · 360,000 SF</p><h3 class="track-name">US Cold Storage</h3><p class="track-detail">Refrigerated warehouse assemblage</p><p class="track-price">Confidential</p><a class="track-link" href="https://www.uscold.com/" target="_blank" rel="noopener">View Project ↗</a></div>
+  </div>
+  <div class="carousel-nav" style="margin-top:14px;">
+    <button class="carousel-btn" onclick="scrollCarousel('track-carousel',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="scrollCarousel('track-carousel',1)">&#8594;</button>
+  </div>
+  <div class="carousel-nav" style="margin-top:14px;">
+    <button class="carousel-btn" onclick="scrollCarousel('gli-track-carousel',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="scrollCarousel('gli-track-carousel',1)">&#8594;</button>
   </div>
 </section>
 
@@ -716,33 +734,22 @@ function initMap(d) {
       allMarkers.active.push({ marker, el });
     });
 
-    // SOLD / LEASED / RENTED — always-visible label chips above dot
-    function makeClosedPin(i, dotBg, dotBorder, labelBg, labelColor, group) {
-      const wrap = document.createElement('div');
-      wrap.style.cssText = 'position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;gap:3px;';
-
-      // Label — always visible
-      const label = document.createElement('div');
-      const addr = i.address.length > 24 ? i.address.substring(0,24)+'…' : i.address;
-      label.textContent = addr + ' · ' + i.price;
-      label.style.cssText = `background:${labelBg};color:${labelColor};font-family:'Raleway',sans-serif;font-size:9px;font-weight:700;white-space:nowrap;padding:4px 9px;border:1px solid ${dotBorder};letter-spacing:0.04em;line-height:1;pointer-events:none;box-shadow:0 1px 8px rgba(0,0,0,0.5);`;
-
-      // Dot
-      const dot = document.createElement('div');
-      dot.style.cssText = `width:8px;height:8px;background:${dotBg};border:1.5px solid ${dotBorder};border-radius:50%;flex-shrink:0;`;
-
-      wrap.appendChild(label);
-      wrap.appendChild(dot);
-      wrap.addEventListener('click', () => openClosedModal(i));
-
-      const marker = new mapboxgl.Marker({element:wrap, anchor:'bottom'}).setLngLat(i.coords).addTo(map);
-      allMarkers[group].push({ marker, el: wrap });
+    // SOLD / LEASED / RENTED — compact labels matching active style
+    function makeClosedPin(i, bg, textColor, group) {
+      const el = document.createElement('div');
+      const parts = i.address.split(' ');
+      const shortAddr = parts.slice(0,3).join(' ');
+      const priceShort = i.price.replace('/mo','').replace(',000,000','M').replace(',000','K');
+      el.textContent = priceShort + ' · ' + shortAddr;
+      el.style.cssText = `background:${bg};color:${textColor};padding:5px 10px;font-size:9.5px;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,0.55);white-space:nowrap;letter-spacing:0.04em;max-width:180px;overflow:hidden;text-overflow:ellipsis;`;
+      el.addEventListener('click', () => openClosedModal(i));
+      const marker = new mapboxgl.Marker({element:el}).setLngLat(i.coords).addTo(map);
+      allMarkers[group].push({ marker, el });
     }
-
     (d.closed.sales||[]).filter(i=>i.coords).forEach(i =>
-      makeClosedPin(i, '#C1A01E', '#C1A01E', 'rgba(4,30,66,0.88)', '#C1A01E', 'sold'));
+      makeClosedPin(i, 'rgba(193,160,30,0.82)', '#041E42', 'sold'));
     [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i =>
-      makeClosedPin(i, 'rgba(255,255,255,0.5)', 'rgba(255,255,255,0.6)', 'rgba(4,30,66,0.88)', 'rgba(255,255,255,0.75)', 'leased'));
+      makeClosedPin(i, 'rgba(255,255,255,0.18)', 'rgba(255,255,255,0.85)', 'leased'));
   });
 }
 
