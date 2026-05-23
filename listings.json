@@ -1,3 +1,4 @@
+
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -255,10 +256,22 @@
         ],
         "mapLabel": "$607,500 · 10521 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514580/10521_gusgqy.jpg",
+        "description": "Duplex in the heart of Palmetto Bay. Well-maintained income property with strong rental history in one of Miami-Dade's most sought-after residential submarkets.",
+        "highlights": [
+          "Duplex",
+          "Palmetto Bay submarket",
+          "Strong rental history",
+          "Quiet residential street"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Palmetto Bay",
+          "Sale Price": "$607,500",
+          "Status": "Sold"
+        },
+        "neighborhood": "Palmetto Bay",
+        "city": "Miami, FL 33157"
       },
       {
         "address": "14513 SW 104th Pl",
@@ -270,10 +283,22 @@
         ],
         "mapLabel": "$550,000 · 14513 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514665/104_place_jxydv3.jpg",
+        "description": "Single family home in Kendall with strong bones and excellent location. Delivered vacant at closing, providing the buyer full flexibility for owner-occupancy or immediate rental.",
+        "highlights": [
+          "Single Family",
+          "Kendall location",
+          "Delivered vacant",
+          "Close to major corridors"
+        ],
+        "specs": {
+          "Type": "Single Family",
+          "Neighborhood": "Kendall",
+          "Sale Price": "$550,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Kendall",
+        "city": "Miami, FL 33186"
       },
       {
         "address": "10621 SW 184th St",
@@ -285,10 +310,22 @@
         ],
         "mapLabel": "$620,000 · 10621 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514672/10621_yqbsgk.jpg",
+        "description": "Duplex on SW 184th corridor in Palmetto Bay. Part of a cluster of multifamily dispositions in the submarket, demonstrating strong investor demand and pricing momentum.",
+        "highlights": [
+          "Duplex",
+          "SW 184th corridor",
+          "Investor demand submarket",
+          "Quick close"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Palmetto Bay",
+          "Sale Price": "$620,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Palmetto Bay",
+        "city": "Miami, FL 33157"
       },
       {
         "address": "7544 NE 1st Ave",
@@ -300,10 +337,22 @@
         ],
         "mapLabel": "$480,000 · 7544 NE",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514748/7544_ne_1_mqglb9.jpg",
+        "description": "Multifamily income property in Little River, one of Miami's fastest-appreciating urban submarkets. Positioned near the Little River District's booming commercial corridor.",
+        "highlights": [
+          "Little River submarket",
+          "Income producing",
+          "Near commercial corridor",
+          "Strong appreciation trajectory"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Little River",
+          "Sale Price": "$480,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Little River",
+        "city": "Miami, FL 33138"
       },
       {
         "address": "7560 NE Miami Ct",
@@ -315,10 +364,22 @@
         ],
         "mapLabel": "$400,000 · 7560 NE",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514791/7544_ne_miami_wpdyvo.jpg",
+        "description": "Multifamily property steps from 7544 NE 1st Ave, demonstrating block-level deal-making expertise in the Little River corridor. Strong in-place rents with upside.",
+        "highlights": [
+          "Little River corridor",
+          "Adjacent to prior sale",
+          "In-place rents",
+          "Value-add upside"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Little River",
+          "Sale Price": "$400,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Little River",
+        "city": "Miami, FL 33138"
       },
       {
         "address": "10541 SW 184th St",
@@ -330,10 +391,22 @@
         ],
         "mapLabel": "$621,000 · 10541 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514864/10541_jdnqr7.jpg",
+        "description": "Duplex on the SW 184th corridor. Closed as part of a multi-transaction sweep of Palmetto Bay multifamily assets, with multiple parties identified and closed in the same submarket.",
+        "highlights": [
+          "Duplex",
+          "Palmetto Bay",
+          "Portfolio context deal",
+          "Closed quickly"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Palmetto Bay",
+          "Sale Price": "$621,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Palmetto Bay",
+        "city": "Miami, FL 33157"
       },
       {
         "address": "10531 SW 184th St",
@@ -345,10 +418,22 @@
         ],
         "mapLabel": "$605,000 · 10531 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514881/10531_awxdve.jpg",
+        "description": "Another duplex on the SW 184th corridor, closed in the same submarket cluster. Demonstrates GLI's hyper-local expertise in sourcing and closing repeat multifamily transactions.",
+        "highlights": [
+          "Duplex",
+          "SW 184th St cluster",
+          "Repeat submarket deal",
+          "Strong comp basis"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Palmetto Bay",
+          "Sale Price": "$605,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Palmetto Bay",
+        "city": "Miami, FL 33157"
       },
       {
         "address": "18350 SW 105th Ave",
@@ -360,10 +445,22 @@
         ],
         "mapLabel": "$613,741 · 18350 SW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515003/18350_SW_105th_Ave_excztr.jpg",
+        "description": "Income-producing duplex in Kendall West. Well-located near Kendall's retail spine with easy access to major expressways. Purchased by an investor targeting stable cash-flow assets.",
+        "highlights": [
+          "Duplex",
+          "Kendall West",
+          "Stable cash flow",
+          "Near retail corridor"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Kendall West",
+          "Sale Price": "$613,741",
+          "Status": "Sold"
+        },
+        "neighborhood": "Kendall West",
+        "city": "Miami, FL 33196"
       },
       {
         "address": "3 NE 75th St",
@@ -375,10 +472,22 @@
         ],
         "mapLabel": "$525,000 · 3 NE",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515030/3_ne_75_e6rays.jpg",
+        "description": "Triplex in Miami's Upper East Side, one of the city's most sought-after urban neighborhoods. Located blocks from Biscayne Blvd's thriving restaurant and retail corridor.",
+        "highlights": [
+          "Triplex",
+          "Upper East Side",
+          "Biscayne Blvd proximity",
+          "High-demand neighborhood"
+        ],
+        "specs": {
+          "Type": "Triplex",
+          "Neighborhood": "Upper East Side",
+          "Sale Price": "$525,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Upper East Side",
+        "city": "Miami, FL 33138"
       },
       {
         "address": "14780 Harrison St",
@@ -390,10 +499,22 @@
         ],
         "mapLabel": "$450,000 · 14780 Harrison",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515139/harrison_yu8id5.jpg",
+        "description": "Single family home in Palmetto Bay's quiet residential streets. Delivered in excellent condition to a buyer seeking a primary residence in one of Miami's top school districts.",
+        "highlights": [
+          "Single Family",
+          "Top school district",
+          "Quiet neighborhood",
+          "Excellent condition"
+        ],
+        "specs": {
+          "Type": "Single Family",
+          "Neighborhood": "Palmetto Bay",
+          "Sale Price": "$450,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Palmetto Bay",
+        "city": "Miami, FL 33176"
       },
       {
         "address": "10601 SW 184th St",
@@ -435,10 +556,52 @@
         ],
         "mapLabel": "$400,000 · 401 NW",
         "mapType": "sold",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515149/401_nw_81_xay2cp.jpg",
+        "description": "Multifamily property in Little Haiti, one of Miami's most rapidly gentrifying urban neighborhoods. Strong upside story driven by proximity to the Little River District and Design District.",
+        "highlights": [
+          "Multifamily",
+          "Little Haiti",
+          "Gentrification upside",
+          "Near Design District"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Little Haiti",
+          "Sale Price": "$400,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Little Haiti",
+        "city": "Miami, FL 33150"
+      },
+      {
+        "address": "27 SW 55 Ave Rd",
+        "type": "Multifamily",
+        "price": "$550,000",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515763/27_sw_55_ave_rd_tajby0.jpg",
+        "coords": [
+          -80.2698,
+          25.7682
+        ],
+        "mapLabel": "$550K · 27 SW 55 Ave Rd",
+        "mapType": "sold",
+        "neighborhood": "West Miami",
+        "city": "Miami, FL 33144",
+        "description": "Triplex in West Miami, sold at $550,000. Well-maintained three-unit income property with strong in-place rents and long-term tenants in one of Miami's most stable residential corridors.",
+        "highlights": [
+          "Triplex",
+          "3 units",
+          "West Miami",
+          "In-place rents",
+          "Stable tenants",
+          "Strong hold basis"
+        ],
+        "specs": {
+          "Type": "Triplex",
+          "Units": "3",
+          "Neighborhood": "West Miami",
+          "Sale Price": "$550,000",
+          "Status": "Sold"
+        }
       }
     ],
     "leases": [
@@ -458,19 +621,30 @@
         "specs": {}
       },
       {
-        "address": "Simon Malls",
+        "address": "Byte & Brew — Dadeland Mall",
         "type": "Retail Lease",
         "price": "$72,000",
-        "imageUrl": "",
-        "description": "",
-        "highlights": [],
-        "specs": {},
-        "coords": [
-          -80.1234,
-          25.8012
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515698/Bytenbrew_tlfnny.jpg",
+        "description": "Commercial lease placement for Byte & Brew at Dadeland Mall, 7535 N Kendall Drive. Retail tech café concept secured in one of Miami-Dade's premier enclosed mall destinations.",
+        "highlights": [
+          "Dadeland Mall",
+          "Retail tech café",
+          "7535 N Kendall Dr",
+          "High-traffic anchor mall"
         ],
-        "mapLabel": "$72,000 · Simon Malls",
-        "mapType": "leased"
+        "specs": {
+          "Type": "Retail Lease",
+          "Mall": "Dadeland Mall",
+          "Address": "7535 N Kendall Dr",
+          "Lease Value": "$72,000"
+        },
+        "coords": [
+          -80.3366,
+          25.6877
+        ],
+        "mapLabel": "$72,000 · Byte & Brew Dadeland",
+        "mapType": "leased",
+        "city": "Miami, FL 33156"
       },
       {
         "address": "3204 NE 2nd Ave",
