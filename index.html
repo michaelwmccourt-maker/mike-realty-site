@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,13 +49,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 /* Hero headline — two lines: "Brokering the deals of tomorrow." / "Today." centered */
 .hero-h1{
   font-family:var(--serif-display);
-  font-size:clamp(40px,6vw,82px);
+  font-size:clamp(36px,5.4vw,74px);
   font-weight:700;line-height:1.1;color:#fff;
   letter-spacing:0.01em;
   text-shadow:0 2px 40px rgba(0,0,0,0.4);
   text-align:center;
 }
-.hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;display:block;}
+.hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;display:inline;}
 .hero-btns{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;justify-content:center;}
 .btn-primary{background:var(--gold);color:var(--navy);padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
@@ -300,7 +299,7 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
   <video id="hero-video" src="https://res.cloudinary.com/dq1n9kjox/video/upload/v1779508592/Video_for_website_suwraf.mp4" autoplay muted loop playsinline preload="auto"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1 class="hero-h1">Brokering the deals of tomorrow.<br><em>Today.</em></h1>
+    <h1 class="hero-h1">Brokering the deals of tomorrow. <em>Today.</em></h1>
     <div class="hero-btns">
       <a href="active.html" class="btn-primary">View Active Listings</a>
       <a href="#closed" class="btn-ghost">See Closed Deals</a>
@@ -311,8 +310,8 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
 
 <!-- STATS BAR -->
 <div class="stats-bar">
-  <div class="stat-item"><div class="stat-number">$7.8M+</div><div class="stat-label">Total Volume Closed in 2025</div></div>
-  <div class="stat-item"><div class="stat-number">26</div><div class="stat-label">Transactions Closed in 2025</div></div>
+  <div class="stat-item"><div class="stat-number">$8.3M</div><div class="stat-label">Total Volume Closed in 2025</div></div>
+  <div class="stat-item"><div class="stat-number">31</div><div class="stat-label">Transactions Closed in 2025</div></div>
   <div class="stat-item"><div class="stat-number">$1B+</div><div class="stat-label">GLI Brokerage Volume</div></div>
   <div class="stat-item"><div class="stat-number">30+</div><div class="stat-label">Years GLI in Business</div></div>
 </div>
@@ -390,9 +389,9 @@ footer{background:#050e1f;padding:38px 72px;display:flex;align-items:center;just
     <a href="closed.html" class="view-all-btn" style="margin-bottom:0;">Full History ↗</a>
   </div>
   <div class="closed-summary fade-up">
-    <div class="closed-stat"><div class="closed-stat-num">$6.8M</div><div class="closed-stat-label">Sales Volume</div></div>
+    <div class="closed-stat"><div class="closed-stat-num">$7.3M</div><div class="closed-stat-label">Sales Volume</div></div>
     <div class="closed-stat"><div class="closed-stat-num">$742K</div><div class="closed-stat-label">Lease Volume</div></div>
-    <div class="closed-stat"><div class="closed-stat-num">$226K</div><div class="closed-stat-label">Annualized Rental Volume</div></div>
+    <div class="closed-stat"><div class="closed-stat-num">$276K</div><div class="closed-stat-label">Annualized Rental Volume</div></div>
   </div>
   <div class="closed-carousel-wrap fade-up">
     <div class="closed-carousel" id="main-carousel"></div>
@@ -610,7 +609,12 @@ function renderCarousel(d) {
       ${l.description?`<p class="closed-card-desc">${l.description.substring(0,80)}...</p>`:''}
       <p class="closed-card-price pending-price">${l.priceDisplay}</p></div></div>`);
   });
-  (d.closed.sales||[]).forEach(i => {
+  const sortedSales = (d.closed.sales||[]).slice().sort((a,b) => {
+    const pa = parseFloat((a.price||'0').replace(/[$,]/g,''))||0;
+    const pb = parseFloat((b.price||'0').replace(/[$,]/g,''))||0;
+    return pb - pa;
+  });
+  sortedSales.forEach(i => {
     cards.push(`<div class="closed-card" onclick='openClosedModal(${JSON.stringify(i)})'>
       <div class="closed-card-img">${i.imageUrl?`<img src="${i.imageUrl}" alt="${i.address}" loading="lazy">`:''}<span class="closed-card-badge badge-sold">Sold</span></div>
       <div class="closed-card-body"><p class="closed-card-type">${i.type}${i.neighborhood?' · '+i.neighborhood:''}</p><p class="closed-card-addr">${i.address}</p>
@@ -712,38 +716,33 @@ function initMap(d) {
       allMarkers.active.push({ marker, el });
     });
 
-    // SOLD — dot + label on hover using popup tooltip approach
-    function makeClosedPin(i, bg, border, group) {
+    // SOLD / LEASED / RENTED — always-visible label chips above dot
+    function makeClosedPin(i, dotBg, dotBorder, labelBg, labelColor, group) {
       const wrap = document.createElement('div');
-      wrap.style.cssText = 'position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;';
+      wrap.style.cssText = 'position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;gap:3px;';
 
+      // Label — always visible
+      const label = document.createElement('div');
+      const addr = i.address.length > 24 ? i.address.substring(0,24)+'…' : i.address;
+      label.textContent = addr + ' · ' + i.price;
+      label.style.cssText = `background:${labelBg};color:${labelColor};font-family:'Raleway',sans-serif;font-size:9px;font-weight:700;white-space:nowrap;padding:4px 9px;border:1px solid ${dotBorder};letter-spacing:0.04em;line-height:1;pointer-events:none;box-shadow:0 1px 8px rgba(0,0,0,0.5);`;
+
+      // Dot
       const dot = document.createElement('div');
-      dot.style.cssText = `width:12px;height:12px;background:${bg};border:1.5px solid ${border};border-radius:50%;transition:width 0.15s,height 0.15s;flex-shrink:0;`;
+      dot.style.cssText = `width:8px;height:8px;background:${dotBg};border:1.5px solid ${dotBorder};border-radius:50%;flex-shrink:0;`;
 
-      const tip = document.createElement('div');
-      tip.style.cssText = `position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:rgba(4,30,66,0.95);color:#fff;font-family:'Raleway',sans-serif;font-size:9px;font-weight:600;white-space:nowrap;padding:4px 8px;border:1px solid ${border};pointer-events:none;opacity:0;transition:opacity 0.15s;letter-spacing:0.04em;`;
-      const addr = i.address.length > 22 ? i.address.substring(0,22)+'…' : i.address;
-      tip.textContent = `${addr} · ${i.price}`;
-
-      wrap.appendChild(tip);
+      wrap.appendChild(label);
       wrap.appendChild(dot);
-
-      wrap.addEventListener('mouseenter', () => {
-        dot.style.width='16px'; dot.style.height='16px';
-        tip.style.opacity='1';
-      });
-      wrap.addEventListener('mouseleave', () => {
-        dot.style.width='12px'; dot.style.height='12px';
-        tip.style.opacity='0';
-      });
       wrap.addEventListener('click', () => openClosedModal(i));
 
-      const marker = new mapboxgl.Marker({element:wrap}).setLngLat(i.coords).addTo(map);
+      const marker = new mapboxgl.Marker({element:wrap, anchor:'bottom'}).setLngLat(i.coords).addTo(map);
       allMarkers[group].push({ marker, el: wrap });
     }
 
-    (d.closed.sales||[]).filter(i=>i.coords).forEach(i => makeClosedPin(i,'rgba(193,160,30,0.8)','#C1A01E','sold'));
-    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i => makeClosedPin(i,'rgba(255,255,255,0.45)','rgba(255,255,255,0.7)','leased'));
+    (d.closed.sales||[]).filter(i=>i.coords).forEach(i =>
+      makeClosedPin(i, '#C1A01E', '#C1A01E', 'rgba(4,30,66,0.88)', '#C1A01E', 'sold'));
+    [...(d.closed.leases||[]),...(d.closed.rentals||[])].filter(i=>i.coords).forEach(i =>
+      makeClosedPin(i, 'rgba(255,255,255,0.5)', 'rgba(255,255,255,0.6)', 'rgba(4,30,66,0.88)', 'rgba(255,255,255,0.75)', 'leased'));
   });
 }
 
