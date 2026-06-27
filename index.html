@@ -1,18 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dq1n9kjox/image/upload/v1782510054/ChatGPT_Image_Jun_26_2026_05_39_09_PM_f4jdrp.png">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/dq1n9kjox/image/upload/v1782510054/ChatGPT_Image_Jun_26_2026_05_39_09_PM_f4jdrp.png">
+<link rel="shortcut icon" href="https://res.cloudinary.com/dq1n9kjox/image/upload/v1782510054/ChatGPT_Image_Jun_26_2026_05_39_09_PM_f4jdrp.png">
+
 <meta name="google-site-verification" content="ZDWrLAns3p7kovHX_PZwUS0I0wzQxKo0nIzEjGI9Cj4" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0OSIgZmlsbD0iIzA0MUU0MiIvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ2IiBmaWxsPSJub25lIiBzdHJva2U9IiNDMUEwMUUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNTAiIHk9IjY4IgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiCiAgICBmb250LXNpemU9IjQ2IgogICAgZm9udC13ZWlnaHQ9IjMwMCIKICAgIGZvbnQtc3R5bGU9Iml0YWxpYyIKICAgIGZpbGw9IiNDMUEwMUUiCiAgICB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NPC90ZXh0Pgo8L3N2Zz4=">
-<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABEElEQVR4nM2XsRGDMAxFFV/moAl7pMgimSQFk7AIBXs4TSZJwTlnHElIsgz8Flv/+Vt3FgAH66LdMI9d5L7fn59eU++qNX68+hu/DqIGZDMBqXGpaYhvCQgLMI9d1BpjIBxEaGkOsCTH9Q0K4GUugfgD8Dbfglj1AGY+DTEVUJumvfn+sifIHuCKea7/AUiilxbl1pVXIU5ACoHFzikAyE6fF6MgpOZ5CqoEOAjtyZPUV4BBWM1NABSExdwMgJlZzKsAclOreTVArbkLQK0CwDI0pAFiD+XvwTkSANgvBfNr2EorgNYpYPMhOpS2mIqo4RS9Au8kuMmY7AEviK2x/Nw/JhYQqbEaoAShpP05PVxfm6+9YRJqq08AAAAASUVORK5CYII=">
-<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
-<link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Michael McCourt · GLI Realty · Miami Real Estate</title>
 <meta name="description" content="Michael McCourt is an Executive Agent at Global Investments Realty in Miami. Specializing in investment sales, multifamily, commercial leasing, and residential real estate across Miami-Dade and Broward. $8.3M+ closed in 2025.">
 <meta property="og:title" content="Michael McCourt · GLI Realty · Miami Real Estate">
 <meta property="og:description" content="Investment sales, multifamily, and commercial leasing across Miami-Dade. Executive Agent at Global Investments Realty — Miami's #1 land sales brokerage with $1B+ in closed volume.">
-<meta property="og:image" content="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779513247/mike_headshot_hjmokt.webp">
+<meta property="og:image" content="https://res.cloudinary.com/dq1n9kjox/image/upload/v1782598295/FE43D3CB-74CF-4484-83A0-B2D40DB79DDF_fbzgro.png">
 <meta property="og:url" content="https://michaelmccourtre.com">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,15 +34,16 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--sans);background:#0d0d0d;color:#fff;overflow-x:hidden;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;background:rgba(4,30,66,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(193,160,30,0.15);transition:all 0.3s;}
-.nav-wordmark{height:38px;width:auto;object-fit:contain;filter:brightness(0) invert(1);}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:transparent;backdrop-filter:none;border-bottom:none;transition:all 0.4s;}
+nav.scrolled{background:rgba(4,30,66,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(193,160,30,0.15);}
+.nav-wordmark{height:48px;width:auto;object-fit:contain;filter:none;}
 .nav-links{display:flex;gap:28px;list-style:none;}
-.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:0.06em;font-style:italic;transition:color 0.2s;}
-.nav-links a:hover{color:var(--gold);}
+.nav-links a{color:var(--gold);text-decoration:none;font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:0.08em;font-style:italic;transition:color 0.2s;text-shadow:0 1px 3px rgba(0,0,0,0.8),0 0 20px rgba(193,160,30,0.3);}
+.nav-links a:hover{color:#e8c840;text-shadow:0 1px 3px rgba(0,0,0,0.8),0 0 24px rgba(193,160,30,0.5);}
 .nav-right{display:flex;align-items:center;gap:14px;}
 .nav-phone{font-family:var(--sans);font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.05em;}
-.btn-nav{background:var(--gold);color:var(--navy);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;display:inline-block;}
-.btn-nav:hover{background:var(--gold-light);}
+.btn-nav{background:transparent;color:var(--gold);border:1px solid rgba(193,160,30,0.7);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.25s;display:inline-block;text-shadow:0 1px 3px rgba(0,0,0,0.8);}
+.btn-nav:hover{background:var(--gold);color:var(--navy);text-shadow:none;}
 
 /* HERO */
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;}
@@ -814,8 +816,8 @@ const obs = new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isInte
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 window.addEventListener('scroll',()=>{
   const nav=document.getElementById('navbar');
-  nav.style.height=window.scrollY>80?'58px':'68px';
-  nav.style.background=window.scrollY>80?'rgba(4,30,66,0.98)':'rgba(4,30,66,0.93)';
+  if(window.scrollY>80){nav.classList.add('scrolled');nav.style.height='60px';}
+  else{nav.classList.remove('scrolled');nav.style.height='72px';}
   // Back to top
   const btt=document.getElementById('back-to-top');
   if(window.scrollY>400){btt.classList.add('visible');}
