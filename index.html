@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,18 +36,18 @@ body{font-family:var(--sans);background:#0d0d0d;color:#fff;overflow-x:hidden;}
 /* NAV */
 nav{position:absolute;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:80px;background:transparent;border-bottom:none;}
 .nav-wordmark{height:64px;width:64px;object-fit:contain;filter:none;}
-.nav-links{display:flex;gap:28px;list-style:none;}
-.nav-links a{color:var(--gold);text-decoration:none;font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;font-style:normal;transition:color 0.2s;text-shadow:0 1px 4px rgba(0,0,0,0.9),0 0 20px rgba(193,160,30,0.25);}
-.nav-links a:hover{color:#e8c840;text-shadow:0 1px 4px rgba(0,0,0,0.9),0 0 24px rgba(193,160,30,0.45);}
+.nav-links{display:flex;gap:28px;list-style:none;margin-left:auto;margin-right:32px;}
+.nav-links a{color:rgba(255,255,255,0.92);text-decoration:none;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;font-style:normal;transition:color 0.2s;text-shadow:0 1px 4px rgba(0,0,0,0.9);}
+.nav-links a:hover{color:var(--gold);text-shadow:0 1px 4px rgba(0,0,0,0.9),0 0 16px rgba(193,160,30,0.4);}
 .nav-right{display:flex;align-items:center;gap:14px;}
 .nav-phone{font-family:var(--sans);font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.05em;}
-.btn-nav{background:transparent;color:var(--gold);border:1px solid rgba(193,160,30,0.7);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.25s;display:inline-block;text-shadow:0 1px 3px rgba(0,0,0,0.8);}
-.btn-nav:hover{background:var(--gold);color:var(--navy);text-shadow:none;}
+.btn-nav{background:transparent;color:rgba(255,255,255,0.92);border:1px solid rgba(255,255,255,0.6);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.25s;display:inline-block;text-shadow:0 1px 3px rgba(0,0,0,0.9);}
+.btn-nav:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);text-shadow:none;}
 
 /* HERO */
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;margin-top:0;padding-top:0;}
 #hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,30,66,0.3) 0%,rgba(4,30,66,0.08) 30%,rgba(4,30,66,0.45) 65%,rgba(4,30,66,0.92) 100%);pointer-events:none;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.0) 30%,rgba(4,30,66,0.3) 70%,rgba(4,30,66,0.85) 100%);pointer-events:none;}
 .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;padding-bottom:12vh;}
 
 /* Eyebrow — 1/3 the size of the main headline */
@@ -81,7 +82,7 @@ nav{position:absolute;top:0;left:0;right:0;z-index:100;display:flex;align-items:
 .stat-label{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);}
 
 /* ABOUT ME */
-#about-me{background:linear-gradient(rgba(4,30,66,0.82),rgba(4,30,66,0.82)),url("https://res.cloudinary.com/dq1n9kjox/image/upload/v1779667329/gli_background_3_q8wkat.webp") center/cover;padding:72px 72px;display:grid;grid-template-columns:190px 1fr;gap:56px;align-items:start;border-bottom:1px solid rgba(193,160,30,0.08);}
+#about-me{background:linear-gradient(rgba(4,30,66,0.78),rgba(4,30,66,0.78)),url("https://res.cloudinary.com/dq1n9kjox/image/upload/v1782738469/ChatGPT_Image_Jun_29_2026_09_06_53_AM_jpxliv.png") center/cover;padding:72px 72px;display:grid;grid-template-columns:190px 1fr;gap:56px;align-items:start;border-bottom:1px solid rgba(193,160,30,0.08);}
 .about-me-photo{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;display:block;filter:grayscale(5%);border:1px solid rgba(193,160,30,0.4);box-shadow:0 0 0 4px rgba(4,30,66,0.6),0 0 0 5px rgba(193,160,30,0.15);}
 .about-me-socials{display:flex;gap:7px;margin-top:10px;}
 .social-btn{display:flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid rgba(193,160,30,0.22);color:rgba(255,255,255,0.55);text-decoration:none;font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:0.1em;transition:all 0.2s;flex:1;justify-content:center;}
