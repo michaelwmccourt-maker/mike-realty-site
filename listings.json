@@ -1,3 +1,4 @@
+
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -21,6 +22,141 @@
     ]
   },
   "active": [
+    {
+      "id": "142-ne-26th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "142-144 NE 26th St",
+      "type": "Land — Covered Land Play · T6-8-O",
+      "mlsId": "A11980852",
+      "price": 6250000,
+      "priceDisplay": "$6,250,000",
+      "priceNote": "$405/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782851383/142_image_h4oeqt.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1962,
+        25.8058
+      ],
+      "mapLabel": "$6.25M · 142 NE 26th St",
+      "description": "Two lots totaling 15,400 SF one block from Biscayne Blvd and Wynwood. Zoned T6-8-O — by right, up to 53 units and 77,000 SF buildable, plus 25% more with Public Benefit. Steps from MELO Group's 25 Plaza, 26 Plaza, 2600 Biscayne, and Residence 27. 5.8% YOY PSF appreciation.",
+      "highlights": [
+        "15,400 SF · 2 lots",
+        "T6-8-O zoning",
+        "53 units by right",
+        "77,000 SF buildable",
+        "1 block from Biscayne Blvd",
+        "Steps from Wynwood",
+        "Fourplex on one lot (3,110 SF)",
+        "+25% with Public Benefit"
+      ],
+      "specs": {
+        "Lot SF": "15,400",
+        "Zoning": "T6-8-O",
+        "Buildable SF": "77,000+",
+        "Units (by right)": "53",
+        "Acres": "0.353",
+        "ML#": "A11980852"
+      },
+      "terms": "All Cash · Conventional"
+    },
+    {
+      "id": "441-ne-26th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "441 NE 26th St",
+      "type": "Land — Development Site · T6-36a-L",
+      "mlsId": "A12015508",
+      "price": 6000000,
+      "priceDisplay": "$6,000,000",
+      "priceNote": "$455/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782850906/Screenshot_2026-06-30_at_4.21.26_PM_bw3km1.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1948,
+        25.8062
+      ],
+      "mapLabel": "$6M · 441 NE 26th St",
+      "description": "Two lots totaling 13,195 SF, one block from Biscayne Bay. Zoned T6-36a-L — by right up to 17.9 units and 141,024 SF buildable, with 40% FAR increase and 100% unit density increase via Public Benefit. Surrounded by Missoni Baia, Bay House Miami, and Onyx on the Bay. Assemblage potential with contiguous parcels.",
+      "highlights": [
+        "13,195 SF · 2 lots",
+        "T6-36a-L zoning",
+        "141,024 SF buildable by right",
+        "+40% FAR via Public Benefit",
+        "+100% unit count via Public Benefit",
+        "1 block from Biscayne Bay",
+        "Adjacent to Missoni Baia",
+        "Assemblage potential"
+      ],
+      "specs": {
+        "Lot SF": "13,195",
+        "Zoning": "T6-36a-L",
+        "Buildable SF": "141,024+",
+        "Acres": "0.300",
+        "Lot Front": "163 ft",
+        "ML#": "A12015508"
+      },
+      "terms": "All Cash · Conventional"
+    },
+    {
+      "id": "702-708-ne-26th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "702-708 NE 26th St",
+      "type": "Land — Vacant Lots · T6-36a-L",
+      "mlsId": "A11988403",
+      "price": 5900000,
+      "priceDisplay": "$5,900,000",
+      "priceNote": "$590/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782851133/Screenshot_2025-07-18_at_12.43.32_PM_xlpeeb.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1938,
+        25.8098
+      ],
+      "mapLabel": "$5.9M · 702 NE 26th St",
+      "description": "Two vacant lots totaling 10,000 SF next to Biscayne Bay. Zoned T6-36a-L — by right up to 34 units or 68 condo-hotel units and 120,000 SF buildable, plus 40% more with Public Benefit. Surrounded by 6,000+ units in luxury buildings. Part of a larger assemblage opportunity totaling ~30,000 SF.",
+      "highlights": [
+        "10,000 SF · 2 vacant lots",
+        "T6-36a-L zoning",
+        "34 units / 68 condo-hotel by right",
+        "120,000 SF buildable",
+        "+40% with Public Benefit",
+        "1 building from the bay",
+        "Bay views",
+        "~30,000 SF assemblage potential"
+      ],
+      "specs": {
+        "Lot SF": "10,000",
+        "Zoning": "T6-36a-L",
+        "Buildable SF": "120,000+",
+        "Lot Front": "100 ft",
+        "Acres": "0.229",
+        "ML#": "A11988403"
+      },
+      "terms": "All Cash · Conventional"
+    },
     {
       "id": "437-ne-30th",
       "status": "active",
@@ -67,6 +203,96 @@
       "terms": "All Cash · Conventional/Refinance"
     },
     {
+      "id": "314-ne-26th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "314 NE 26th Ter",
+      "type": "Land — Covered Land Play / Duplex",
+      "mlsId": "A12001468",
+      "price": 2700000,
+      "priceDisplay": "$2,700,000",
+      "priceNote": "$505/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782850330/Screenshot_2026-06-30_at_4.11.27_PM_htlnxh.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1958,
+        25.8054
+      ],
+      "mapLabel": "$2.7M · 314 NE 26th Ter",
+      "description": "Two-story duplex on a 5,340 SF lot, minutes from Wynwood, Design District, Midtown, and Downtown. 2,254 SF building with independent entrances — dual income, owner-occupant, or full renovation play. Both units leased to one tenant. Assemblage potential with neighboring parcels. 5.8% YOY PSF appreciation in Edgewater.",
+      "highlights": [
+        "5,340 SF lot",
+        "2,254 SF building",
+        "Two-story duplex",
+        "Independent entrances",
+        "Both units leased (income producing)",
+        "Assemblage potential",
+        "Minutes from Wynwood & Design District",
+        "5.8% YOY PSF appreciation"
+      ],
+      "specs": {
+        "Lot SF": "5,340",
+        "Bldg SF": "2,254",
+        "Lot Front": "62 ft",
+        "Zoning": "6405",
+        "Acres": "0.122",
+        "ML#": "A12001468"
+      },
+      "terms": "All Cash · Conventional"
+    },
+    {
+      "id": "334-ne-26th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "334 NE 26th Ter",
+      "type": "Land — Covered Land Play / Residential",
+      "mlsId": "A-CREXI",
+      "price": 2250000,
+      "priceDisplay": "$2,250,000",
+      "priceNote": "$505/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782850779/DSC_0923_mbocob.jpg",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.196,
+        25.8056
+      ],
+      "mapLabel": "$2.25M · 334 NE 26th Ter",
+      "description": "2,298 SF residence on a 4,450 SF lot in Edgewater, strategically positioned along Biscayne Blvd's growth corridor. Surrounded by 3,000+ new luxury residences in development. Prime for long-term holding, income-generating rental, or strategic redevelopment. Easy access to I-95, Downtown/Brickell, and MIA.",
+      "highlights": [
+        "4,450 SF lot",
+        "2,298 SF · 4BD/2BA",
+        "Zoning 4604",
+        "3 parking spaces",
+        "Year built 1924",
+        "Biscayne Blvd corridor",
+        "3,000+ units in development nearby",
+        "Owner/User investment type"
+      ],
+      "specs": {
+        "Lot SF": "4,450",
+        "Bldg SF": "2,298",
+        "Bedrooms": "4",
+        "Year Built": "1924",
+        "Zoning": "4604",
+        "Parking": "3 spaces"
+      },
+      "terms": "All Cash · Conventional · Owner/User"
+    },
+    {
       "id": "6326-nw-4th",
       "status": "active",
       "badge": "For Sale",
@@ -110,52 +336,6 @@
         "Zoning": "4600"
       },
       "terms": "All Cash · FHA"
-    },
-    {
-      "id": "1115-meridian",
-      "status": "active",
-      "badge": "For Sale",
-      "badgeType": "sale",
-      "tags": [
-        "sale"
-      ],
-      "neighborhood": "South Beach",
-      "city": "Miami Beach, FL 33139",
-      "address": "1115 Meridian Ave #TH",
-      "type": "Townhouse Condo — Park Square",
-      "mlsId": "A11990206",
-      "price": 550000,
-      "priceDisplay": "$550,000",
-      "priceNote": "Cash Only",
-      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779512034/1115_meridian_c5mliq.jpg",
-      "imageBg": "linear-gradient(135deg,#1a0a20,#2d1040)",
-      "coords": [
-        -80.1395,
-        25.7829
-      ],
-      "mapLabel": "$550K · 1115 Meridian",
-      "description": "A rare South Beach find. Split-level townhouse condo with massive private patio and fully fenced garden. Impact windows, exposed wood ceilings, in-unit W/D. Cash only — land lease with 20 years remaining.",
-      "highlights": [
-        "2BD / 2BA split-level",
-        "~1,200 SF living area",
-        "Large private patio & fenced garden",
-        "Impact windows — full storm protection",
-        "Exposed wood ceilings",
-        "In-unit washer/dryer",
-        "New 2023 roof",
-        "HOA: $1,324/mo (landscaping, water, trash)",
-        "Cash only · Land lease (20 yrs remaining)",
-        "Min 180-day lease · No daily rentals"
-      ],
-      "specs": {
-        "Bedrooms": "2",
-        "Bathrooms": "2",
-        "Sq Ft": "~1,200",
-        "Year Built": "1956",
-        "Floor": "1",
-        "HOA": "$1,324/mo"
-      },
-      "terms": "All Cash only"
     },
     {
       "id": "bay-park-618",
@@ -205,44 +385,6 @@
   ],
   "pending": [
     {
-      "id": "4361-nw-35th",
-      "status": "pending",
-      "badge": "Under Contract",
-      "badgeType": "pending",
-      "tags": [
-        "sale"
-      ],
-      "neighborhood": "Oriole Estates",
-      "city": "Lauderdale Lakes, FL 33309",
-      "address": "4361 NW 35th Ter",
-      "type": "Single Family",
-      "mlsId": "A11872862",
-      "price": 399000,
-      "priceDisplay": "$399,000",
-      "priceNote": "",
-      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517805/4361_NW_35th_Ter_hqyzuf.jpg",
-      "imageBg": "linear-gradient(135deg,#1a1000,#2d2000)",
-      "description": "3BR/2BA CBS home with 1-car garage in quiet Oriole Estates. Large fenced backyard, Florida room, great natural light. Strong primary residence or long-term investment play.",
-      "highlights": [
-        "3 Bedrooms / 2 Bathrooms",
-        "1,795 SF living area",
-        "1-car garage",
-        "Fenced backyard",
-        "Florida room",
-        "CBS construction",
-        "Tile floors"
-      ],
-      "specs": {
-        "Bedrooms": "3",
-        "Bathrooms": "2",
-        "Sq Ft": "1,795",
-        "Lot SF": "6,902",
-        "Year Built": "1966",
-        "Garage": "1-Car"
-      },
-      "terms": "All Cash · Conventional · FHA"
-    },
-    {
       "id": "11430-ne-13th",
       "status": "pending",
       "badge": "Under Contract",
@@ -277,6 +419,41 @@
         "Status": "Under Contract"
       },
       "terms": "TBD"
+    },
+    {
+      "id": "1115-meridian-pending",
+      "status": "pending",
+      "badge": "Under Contract",
+      "badgeType": "pending",
+      "tags": [
+        "sale"
+      ],
+      "neighborhood": "South Beach",
+      "city": "Miami Beach, FL 33139",
+      "address": "1115 Meridian Ave #TH",
+      "type": "Townhouse Condo — Park Square",
+      "mlsId": "A11990206",
+      "price": 550000,
+      "priceDisplay": "$550,000",
+      "priceNote": "Cash Only",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779512034/1115_meridian_c5mliq.jpg",
+      "description": "Split-level townhouse condo with massive private patio and fully fenced garden. Impact windows, exposed wood ceilings, in-unit W/D. Cash only — land lease with 20 years remaining.",
+      "highlights": [
+        "2BD / 2BA split-level",
+        "~1,200 SF",
+        "Large private patio",
+        "Impact windows",
+        "In-unit W/D",
+        "Cash only · Land lease"
+      ],
+      "specs": {
+        "Bedrooms": "2",
+        "Bathrooms": "2",
+        "Sq Ft": "~1,200",
+        "Year Built": "1956",
+        "HOA": "$1,324/mo"
+      },
+      "terms": "All Cash only"
     }
   ],
   "closed": {
@@ -652,29 +829,34 @@
     ],
     "leases": [
       {
-        "address": "8411 Biscayne Blvd",
+        "address": "3206 NE 2nd Ave",
         "type": "Commercial Lease",
-        "price": "$66,000",
+        "price": "$412,700",
         "coords": [
-          -80.1884,
-          25.8518
+          -80.1957,
+          25.8057
         ],
-        "mapLabel": "$66,000 · 8411 Biscayne Blvd",
+        "mapLabel": "$412,700 · 3206 NE 2nd Ave",
         "mapType": "leased",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517944/8411_biscayne_blvd_nafkvn.jpg",
-        "description": "Commercial retail lease at 8411 Biscayne Blvd — 1,100 SF of retail space leased at $2,750/month. High-visibility Biscayne Blvd corridor location in Miami's Upper East Side.",
-        "highlights": [
-          "1,100 SF retail",
-          "$2,750/month",
-          "Biscayne Blvd frontage",
-          "Upper East Side"
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518018/3206_ne_2_copy_mf0anx.jpg",
+        "description": "",
+        "highlights": [],
+        "specs": {}
+      },
+      {
+        "address": "3204 NE 2nd Ave",
+        "type": "Commercial Lease",
+        "price": "$191,129",
+        "coords": [
+          -80.1957,
+          25.8057
         ],
-        "specs": {
-          "Type": "Retail Lease",
-          "SF": "1,100",
-          "Monthly Rent": "$2,750",
-          "Location": "Biscayne Blvd"
-        }
+        "mapLabel": "$191,129 · 3204 NE 2nd Ave",
+        "mapType": "leased",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518009/3204_ne_2_aal6ag.jpg",
+        "description": "",
+        "highlights": [],
+        "specs": {}
       },
       {
         "address": "Byte & Brew — Dadeland Mall",
@@ -703,34 +885,29 @@
         "city": "Miami, FL 33156"
       },
       {
-        "address": "3204 NE 2nd Ave",
+        "address": "8411 Biscayne Blvd",
         "type": "Commercial Lease",
-        "price": "$191,129",
+        "price": "$66,000",
         "coords": [
-          -80.1957,
-          25.8057
+          -80.1884,
+          25.8518
         ],
-        "mapLabel": "$191,129 · 3204 NE 2nd Ave",
+        "mapLabel": "$66,000 · 8411 Biscayne Blvd",
         "mapType": "leased",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518009/3204_ne_2_aal6ag.jpg",
-        "description": "",
-        "highlights": [],
-        "specs": {}
-      },
-      {
-        "address": "3206 NE 2nd Ave",
-        "type": "Commercial Lease",
-        "price": "$412,700",
-        "coords": [
-          -80.1957,
-          25.8057
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517944/8411_biscayne_blvd_nafkvn.jpg",
+        "description": "Commercial retail lease at 8411 Biscayne Blvd — 1,100 SF of retail space leased at $2,750/month. High-visibility Biscayne Blvd corridor location in Miami's Upper East Side.",
+        "highlights": [
+          "1,100 SF retail",
+          "$2,750/month",
+          "Biscayne Blvd frontage",
+          "Upper East Side"
         ],
-        "mapLabel": "$412,700 · 3206 NE 2nd Ave",
-        "mapType": "leased",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779518018/3206_ne_2_copy_mf0anx.jpg",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "specs": {
+          "Type": "Retail Lease",
+          "SF": "1,100",
+          "Monthly Rent": "$2,750",
+          "Location": "Biscayne Blvd"
+        }
       }
     ],
     "rentals": [
