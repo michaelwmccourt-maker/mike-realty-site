@@ -151,14 +151,15 @@ nav{
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;margin-top:0;padding-top:0;}
 #hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.0) 40%,rgba(4,30,66,0.12) 75%,rgba(4,30,66,0.45) 100%);pointer-events:none;}
-.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 48px 8vh;}
+.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;padding-top:120px;}
 
 /* Eyebrow — 1/3 the size of the main headline */
 .hero-eyebrow{
-  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:#fff;
-  margin-top:28px;margin-bottom:0;display:flex;align-items:center;justify-content:center;gap:16px;
-  font-size:clamp(11px,1.75vw,21px);
+  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:16px;
+  font-size:clamp(12px,1.6vw,20px);
 }
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:30px;height:1px;background:var(--gold);}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:rgba(255,255,255,0.5);flex-shrink:0;}
 
 /* Hero headline — two lines: "Brokering the deals of tomorrow." / "Today." centered */
@@ -171,7 +172,7 @@ nav{
   text-align:center;
 }
 .hero-h1 em{font-style:italic;color:var(--gold);font-weight:700;display:inline;}
-.hero-btns{display:flex;gap:14px;margin-top:clamp(48px,8vh,96px);flex-wrap:wrap;justify-content:center;}
+.hero-btns{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;justify-content:center;}
 .btn-primary{background:var(--gold);color:var(--navy);padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
 .btn-ghost{border:1px solid rgba(255,255,255,0.45);color:#fff;padding:14px 36px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;background:transparent;cursor:pointer;transition:all 0.2s;display:inline-block;}
@@ -408,9 +409,9 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 /* Nav brand lockup */
 .nav-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
-.nav-mm-icon{height:58px;width:58px;object-fit:contain;}
-.nav-divider{color:rgba(255,255,255,0.35);font-size:22px;font-weight:200;line-height:1;}
-.nav-gli-wordmark{height:42px;width:auto;object-fit:contain;filter:none;}
+.nav-mm-icon{height:110px;width:110px;object-fit:contain;}
+.nav-divider{color:rgba(255,255,255,0.35);font-size:40px;font-weight:200;line-height:1;}
+.nav-gli-wordmark{height:80px;width:auto;object-fit:contain;filter:none;}
 .nav-wordmark{display:none;} /* hide old wordmark if still in DOM */
 
 /* Nav links white caps */
@@ -451,16 +452,16 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 /* ── MOBILE ── */
 @media(max-width:960px){
-  nav{padding:0 16px;height:68px;}
+  nav{padding:0 16px;height:108px;}
   #hero{height:50vh;min-height:280px;}
   .nav-links{display:none !important;}
   .hamburger{display:flex !important;}
   .nav-phone{display:none !important;}
   .btn-nav{display:none !important;}
-  .nav-mm-icon{height:48px;width:48px;}
+  .nav-mm-icon{height:88px;width:88px;}
   .nav-brand{justify-content:flex-start;}
-  .nav-gli-wordmark{height:32px;}
-  .nav-divider{font-size:20px;}
+  .nav-gli-wordmark{height:60px;}
+  .nav-divider{font-size:32px;}
   section,#contact{padding:48px 20px;}
   /* About: photo left, creds right — compact */
   #about-me{padding:32px 20px;grid-template-columns:1fr 1fr !important;gap:16px;align-items:start;}
@@ -487,8 +488,19 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
   .closed-summary{grid-template-columns:repeat(3,1fr);}
   .hero-h1{font-size:clamp(28px,7vw,48px);}
   .hero-eyebrow{display:none !important;}
+  .hero-eyebrow{
+  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:16px;
+  font-size:clamp(12px,1.6vw,20px);
+}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:30px;height:1px;background:var(--gold);}
   .hero-btns{margin-top:20px;}
-  .hero-eyebrow{margin-top:14px;}
+  .hero-eyebrow{
+  font-family:var(--sans);font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:24px;display:flex;align-items:center;justify-content:center;gap:16px;
+  font-size:clamp(12px,1.6vw,20px);
+}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:30px;height:1px;background:var(--gold);}
 }
 @media(min-width:961px){
   .hamburger{display:none !important;}
