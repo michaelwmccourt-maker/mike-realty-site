@@ -45,9 +45,10 @@ body{font-family:var(--sans);background:#0d0d0d;color:#fff;overflow-x:hidden;}
 nav{
   position:absolute;top:0;left:0;right:0;z-index:200;
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 32px;height:72px;
+  padding:0 32px;height:120px;
   background:transparent;
   flex-wrap:nowrap;
+  overflow:visible;
 }
 .nav-wordmark{height:56px;width:auto;object-fit:contain;filter:none;flex-shrink:0;}
 /* Desktop links */
@@ -408,7 +409,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 /* ── OVERRIDES & ADDITIONS ── */
 
 /* Nav brand lockup */
-.nav-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;overflow:visible;}
 .nav-mm-icon{height:110px;width:110px;object-fit:contain;}
 .nav-divider{color:rgba(255,255,255,0.35);font-size:40px;font-weight:200;line-height:1;}
 .nav-gli-wordmark{height:80px;width:auto;object-fit:contain;filter:none;}
@@ -513,7 +514,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 <!-- NAV -->
 <nav id="navbar">
-  <div class="nav-brand"><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1784067268/MM_svg_file_nitoec.svg" alt="MM" class="nav-mm-icon"><span class="nav-divider">|</span><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779513483/image2vector_1_ekjvy8.svg" alt="GLI" class="nav-gli-wordmark"></div>
+  <div class="nav-brand"><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/fl_sanitize/v1784067268/MM_svg_file_nitoec.svg" alt="MM" class="nav-mm-icon"><span class="nav-divider">|</span><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779513483/image2vector_1_ekjvy8.svg" alt="GLI" class="nav-gli-wordmark"></div>
   <ul class="nav-links">
     <li><a href="#listings">Active Listings</a></li>
     <li><a href="#closed">Closed Deals</a></li>
@@ -550,6 +551,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
   <video id="hero-video" src="https://res.cloudinary.com/dq1n9kjox/video/upload/v1782755438/download_4_p2wqzc.mp4" autoplay muted loop playsinline preload="auto"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
+    <p class="hero-eyebrow">Miami &nbsp;·&nbsp; South Florida</p>
     <h1 class="hero-h1">Brokering the deals of tomorrow. <em>Today.</em></h1>
     <div class="hero-btns">
       <a href="#listings" class="btn-primary">View Active Listings</a>
