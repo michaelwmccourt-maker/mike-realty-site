@@ -1,4 +1,5 @@
 
+
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -42,7 +43,7 @@
       "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782851383/142_image_h4oeqt.png",
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
-        -80.1962,
+        -80.1958,
         25.8058
       ],
       "mapLabel": "$6.25M · 142 NE 26th St",
@@ -87,8 +88,8 @@
       "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782850906/Screenshot_2026-06-30_at_4.21.26_PM_bw3km1.png",
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
-        -80.1948,
-        25.8062
+        -80.1951,
+        25.8063
       ],
       "mapLabel": "$6M · 441 NE 26th St",
       "description": "Two lots totaling 13,195 SF, one block from Biscayne Bay. Zoned T6-36a-L — by right up to 17.9 units and 141,024 SF buildable, with 40% FAR increase and 100% unit density increase via Public Benefit. Surrounded by Missoni Baia, Bay House Miami, and Onyx on the Bay. Assemblage potential with contiguous parcels.",
@@ -132,7 +133,7 @@
       "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782851133/Screenshot_2025-07-18_at_12.43.32_PM_xlpeeb.png",
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
-        -80.1938,
+        -80.1942,
         25.8098
       ],
       "mapLabel": "$5.9M · 702 NE 26th St",
@@ -177,7 +178,7 @@
       "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779511751/437_image_nfzepn.jpg",
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
-        -80.1917,
+        -80.1921,
         25.8065
       ],
       "mapLabel": "$3.2M · 437 NE 30th",
@@ -222,8 +223,8 @@
       "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1782850330/Screenshot_2026-06-30_at_4.11.27_PM_htlnxh.png",
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
-        -80.1958,
-        25.8054
+        -80.1956,
+        25.8055
       ],
       "mapLabel": "$2.7M · 314 NE 26th Ter",
       "description": "Two-story duplex on a 5,340 SF lot, minutes from Wynwood, Design District, Midtown, and Downtown. 2,254 SF building with independent entrances — dual income, owner-occupant, or full renovation play. Both units leased to one tenant. Assemblage potential with neighboring parcels. 5.8% YOY PSF appreciation in Edgewater.",
@@ -268,7 +269,7 @@
       "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
       "coords": [
         -80.196,
-        25.8056
+        25.8053
       ],
       "mapLabel": "$2.25M · 334 NE 26th Ter",
       "description": "2,298 SF residence on a 4,450 SF lot in Edgewater, strategically positioned along Biscayne Blvd's growth corridor. Surrounded by 3,000+ new luxury residences in development. Prime for long-term holding, income-generating rental, or strategic redevelopment. Easy access to I-95, Downtown/Brickell, and MIA.",
@@ -453,7 +454,11 @@
         "Year Built": "1956",
         "HOA": "$1,324/mo"
       },
-      "terms": "All Cash only"
+      "terms": "All Cash only",
+      "coords": [
+        -80.1395,
+        25.7829
+      ]
     }
   ],
   "closed": {
@@ -518,7 +523,7 @@
         "price": "$620,000",
         "coords": [
           -80.3892,
-          25.5813
+          25.5814
         ],
         "mapLabel": "$620,000 · 10621 SW",
         "mapType": "sold",
@@ -706,8 +711,8 @@
         "type": "Single Family",
         "price": "$450,000",
         "coords": [
-          -80.2126,
-          25.6096
+          -80.3708,
+          25.6089
         ],
         "mapLabel": "$450,000 · 14780 Harrison",
         "mapType": "sold",
@@ -833,7 +838,7 @@
         "type": "Commercial Lease",
         "price": "$412,700",
         "coords": [
-          -80.1957,
+          -80.1956,
           25.8057
         ],
         "mapLabel": "$412,700 · 3206 NE 2nd Ave",
@@ -991,7 +996,7 @@
         "type": "Rental Placed",
         "price": "$1,600/mo",
         "coords": [
-          -80.1917,
+          -80.1921,
           25.8065
         ],
         "mapLabel": "$1,600/mo · 437 NE 30th St #4",
