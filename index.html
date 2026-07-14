@@ -150,7 +150,7 @@ nav{
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;margin-top:0;padding-top:0;}
 #hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.0) 40%,rgba(4,30,66,0.12) 75%,rgba(4,30,66,0.45) 100%);pointer-events:none;}
-.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;padding-bottom:12vh;}
+.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 48px 8vh;}
 
 /* Eyebrow — 1/3 the size of the main headline */
 .hero-eyebrow{
@@ -407,9 +407,9 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 /* Nav brand lockup */
 .nav-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
-.nav-mm-icon{height:44px;width:44px;object-fit:contain;}
+.nav-mm-icon{height:58px;width:58px;object-fit:contain;}
 .nav-divider{color:rgba(255,255,255,0.35);font-size:22px;font-weight:200;line-height:1;}
-.nav-gli-wordmark{height:32px;width:auto;object-fit:contain;filter:none;}
+.nav-gli-wordmark{height:42px;width:auto;object-fit:contain;filter:none;}
 .nav-wordmark{display:none;} /* hide old wordmark if still in DOM */
 
 /* Nav links white caps */
@@ -438,13 +438,15 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
 
 /* Mobile drawer */
-.nav-drawer{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(4,30,66,0.98);backdrop-filter:blur(24px);z-index:9999;display:flex;flex-direction:column;padding:80px 36px 48px;transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);}
+.nav-drawer{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(4,30,66,0.98);backdrop-filter:blur(24px);z-index:9999;display:flex;flex-direction:column;padding:80px 36px 48px;transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);overflow-y:auto;}
 .nav-drawer.open{transform:translateX(0);}
 .nav-drawer a{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(26px,7vw,40px);font-weight:300;font-style:italic;color:rgba(255,255,255,0.85) !important;text-decoration:none !important;padding:16px 0;border-bottom:1px solid rgba(193,160,30,0.12);transition:color 0.2s,padding-left 0.2s;}
 .nav-drawer a:hover{color:var(--gold) !important;padding-left:8px;}
 .drawer-contact{margin-top:auto;padding-top:28px;}
 .drawer-phone{font-family:var(--sans);font-size:14px;color:var(--gold);font-weight:500;letter-spacing:0.1em;text-decoration:none !important;display:block;margin-bottom:14px;}
 .drawer-cta{background:var(--gold);color:#041E42;padding:13px 30px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;display:inline-block;}
+.drawer-close{position:absolute;top:24px;right:24px;background:none;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);width:40px;height:40px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+.drawer-close:hover{border-color:var(--gold);color:var(--gold);}
 
 /* ── MOBILE ── */
 @media(max-width:960px){
@@ -454,9 +456,10 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
   .hamburger{display:flex !important;}
   .nav-phone{display:none !important;}
   .btn-nav{display:none !important;}
-  .nav-mm-icon{height:36px;width:36px;}
-  .nav-gli-wordmark{height:24px;}
-  .nav-divider{font-size:17px;}
+  .nav-mm-icon{height:48px;width:48px;}
+  .nav-brand{justify-content:flex-start;}
+  .nav-gli-wordmark{height:32px;}
+  .nav-divider{font-size:20px;}
   section,#contact{padding:48px 20px;}
   /* About: photo left, creds right — compact */
   #about-me{padding:32px 20px;grid-template-columns:1fr 1fr !important;gap:16px;align-items:start;}
@@ -481,7 +484,9 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
   .modal-box{margin:20px 10px;padding:20px 16px;}
   .modal-specs{grid-template-columns:repeat(2,1fr);}
   .closed-summary{grid-template-columns:repeat(3,1fr);}
-  .hero-h1{font-size:clamp(30px,7.5vw,52px);}
+  .hero-h1{font-size:clamp(28px,7vw,48px);}
+  .hero-btns{margin-top:20px;}
+  .hero-eyebrow{margin-top:14px;}
 }
 @media(min-width:961px){
   .hamburger{display:none !important;}
@@ -494,7 +499,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 <!-- NAV -->
 <nav id="navbar">
-  <div class="nav-brand"><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1784064844/ChatGPT_Image_Jul_14_2026_05_33_25_PM_jtlz1v.png" alt="MM" class="nav-mm-icon"><span class="nav-divider">|</span><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779513483/image2vector_1_ekjvy8.svg" alt="GLI" class="nav-gli-wordmark"></div>
+  <div class="nav-brand"><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1784066701/MM_vector_mkfqow.svg" alt="MM" class="nav-mm-icon"><span class="nav-divider">|</span><img src="https://res.cloudinary.com/dq1n9kjox/image/upload/v1779513483/image2vector_1_ekjvy8.svg" alt="GLI" class="nav-gli-wordmark"></div>
   <ul class="nav-links">
     <li><a href="#listings">Active Listings</a></li>
     <li><a href="#closed">Closed Deals</a></li>
@@ -513,6 +518,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
 
 <!-- MOBILE DRAWER -->
 <div class="nav-drawer" id="nav-drawer">
+  <button class="drawer-close" onclick="closeMenu()" aria-label="Close menu">&#x2715;</button>
   <a href="#listings" onclick="closeMenu()">Active Listings</a>
   <a href="#closed" onclick="closeMenu()">Closed Deals</a>
   <a href="#team" onclick="closeMenu()">Team</a>
@@ -535,7 +541,7 @@ footer{background:linear-gradient(rgba(3,12,28,0.98),rgba(3,12,28,0.98)),url("ht
       <a href="#listings" class="btn-primary">View Active Listings</a>
       <a href="#closed" class="btn-ghost">See Closed Deals</a>
     </div>
-    <p class="hero-eyebrow">Miami &nbsp;·&nbsp; South Florida</p>
+    
   </div>
 </section>
 
