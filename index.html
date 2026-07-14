@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -41,16 +41,110 @@ html{scroll-behavior:smooth;overflow-x:hidden;background:#041E42;overflow-y:auto
 body{font-family:var(--sans);background:#0d0d0d;color:#fff;overflow-x:hidden;}
 
 /* NAV */
-nav{position:absolute;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:80px;background:transparent;border-bottom:none;flex-wrap:nowrap;}
-.nav-wordmark{height:62px;width:auto;object-fit:contain;filter:none;}
-.nav-links{display:flex;gap:28px;list-style:none;margin-left:auto;margin-right:32px;}
-.nav-links a{color:rgba(255,255,255,0.92) !important;text-decoration:none !important;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;font-style:normal;transition:color 0.2s;text-shadow:0 1px 4px rgba(0,0,0,0.9);}
-.nav-links a:hover{color:var(--gold) !important;text-shadow:0 1px 4px rgba(0,0,0,0.9),0 0 16px rgba(193,160,30,0.4);}
-.nav-links a:visited{color:rgba(255,255,255,0.92) !important;}
-.nav-right{display:flex;align-items:center;gap:14px;}
-.nav-phone{font-family:var(--sans);font-size:15px;color:rgba(255,255,255,0.92) !important;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none !important;text-shadow:0 1px 4px rgba(0,0,0,0.9);}
-.btn-nav{background:transparent;color:rgba(255,255,255,0.92);border:1px solid rgba(255,255,255,0.6);padding:8px 20px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.25s;display:inline-block;text-shadow:0 1px 3px rgba(0,0,0,0.9);}
-.btn-nav:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);text-shadow:none;}
+nav{
+  position:absolute;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 32px;height:72px;
+  background:transparent;
+  flex-wrap:nowrap;
+}
+.nav-wordmark{height:56px;width:auto;object-fit:contain;filter:none;flex-shrink:0;}
+/* Desktop links */
+.nav-links{display:flex;gap:28px;list-style:none;margin-left:auto;margin-right:28px;}
+.nav-links a{
+  color:#fff !important;text-decoration:none !important;
+  font-family:var(--sans);font-size:13px;font-weight:600;
+  letter-spacing:0.2em;text-transform:uppercase;
+  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+  transition:color 0.2s;
+}
+.nav-links a:visited{color:#fff !important;}
+.nav-links a:hover{color:var(--gold) !important;}
+/* Desktop CTA */
+.btn-nav{
+  background:transparent;color:#fff;
+  border:1px solid rgba(255,255,255,0.55);
+  padding:8px 18px;font-family:var(--sans);font-size:10px;
+  font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  text-decoration:none;transition:all 0.25s;display:inline-block;
+  white-space:nowrap;flex-shrink:0;
+}
+.btn-nav:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);}
+.desktop-only{flex-shrink:0;}
+/* Phone number — desktop only */
+.nav-phone{
+  font-family:var(--sans);font-size:12px;color:#fff;
+  font-weight:500;letter-spacing:0.12em;text-transform:uppercase;
+  text-decoration:none;text-shadow:0 1px 4px rgba(0,0,0,0.9);
+  margin-right:20px;flex-shrink:0;
+}
+/* HAMBURGER — mobile only, hidden on desktop */
+.hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;align-items:center;
+  gap:5px;width:40px;height:40px;
+  background:none;border:none;cursor:pointer;
+  padding:6px;flex-shrink:0;z-index:201;
+}
+.hamburger span{
+  display:block;width:24px;height:2px;
+  background:#fff;border-radius:1px;
+  transition:all 0.3s;transform-origin:center;
+}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+/* MOBILE DRAWER */
+.nav-drawer{
+  display:none;
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(4,30,66,0.98);
+  z-index:199;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+  padding:80px 40px 40px;
+}
+.nav-drawer.open{display:flex;}
+.nav-drawer a{
+  display:block;width:100%;text-align:center;
+  font-family:var(--serif-display);font-size:clamp(26px,6vw,36px);
+  font-weight:300;font-style:italic;
+  color:#fff !important;text-decoration:none !important;
+  padding:16px 0;
+  border-bottom:1px solid rgba(193,160,30,0.12);
+  transition:color 0.2s;
+}
+.nav-drawer a:last-of-type{border-bottom:none;}
+.nav-drawer a:hover,.nav-drawer a:active{color:var(--gold) !important;}
+.nav-drawer .drawer-contact{
+  margin-top:32px;text-align:center;width:100%;
+}
+.nav-drawer .drawer-cta{
+  display:inline-block;margin-top:16px;
+  background:var(--gold);color:var(--navy) !important;
+  padding:14px 40px;font-family:var(--sans);
+  font-size:11px;font-weight:700;letter-spacing:0.14em;
+  text-transform:uppercase;text-decoration:none !important;
+}
+
+/* DESKTOP: hide hamburger, show links */
+@media(min-width:961px){
+  .hamburger{display:none !important;}
+  .nav-drawer{display:none !important;}
+  .nav-phone{display:inline;}
+}
+/* MOBILE: hide links, show hamburger */
+@media(max-width:960px){
+  nav{padding:0 20px;height:64px;background:rgba(4,30,66,0.0);}
+
+
+
+  .btn-nav{display:none !important;}
+
+  .nav-wordmark{height:44px;}
+}
 
 /* HERO */
 #hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;background:#041E42;margin-top:0;padding-top:0;}
@@ -866,18 +960,17 @@ window.addEventListener('scroll',()=>{
 function toggleMenu(){
   const drawer=document.getElementById('nav-drawer');
   const btn=document.getElementById('hamburger');
-  const isOpen=drawer.classList.contains('open');
-  if(isOpen){closeMenu();}
-  else{drawer.classList.add('open');btn.classList.add('open');document.body.style.overflow='hidden';}
+  const open=drawer.classList.toggle('open');
+  btn.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
 }
 function closeMenu(){
   document.getElementById('nav-drawer').classList.remove('open');
   document.getElementById('hamburger').classList.remove('open');
   document.body.style.overflow='';
 }
-// Close drawer on outside tap
-document.getElementById('nav-drawer').addEventListener('click', e=>{
-  if(e.target===document.getElementById('nav-drawer')) closeMenu();
+document.getElementById('nav-drawer').addEventListener('click',function(e){
+  if(e.target===this) closeMenu();
 });
 </script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
