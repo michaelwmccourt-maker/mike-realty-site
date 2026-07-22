@@ -420,102 +420,36 @@
         "Status": "Under Contract"
       },
       "terms": "TBD"
-    },
-    {
-      "id": "1115-meridian-pending",
-      "status": "pending",
-      "badge": "Under Contract",
-      "badgeType": "pending",
-      "tags": [
-        "sale"
-      ],
-      "neighborhood": "South Beach",
-      "city": "Miami Beach, FL 33139",
-      "address": "1115 Meridian Ave #TH",
-      "type": "Townhouse Condo — Park Square",
-      "mlsId": "A11990206",
-      "price": 550000,
-      "priceDisplay": "$550,000",
-      "priceNote": "Cash Only",
-      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779512034/1115_meridian_c5mliq.jpg",
-      "description": "Split-level townhouse condo with massive private patio and fully fenced garden. Impact windows, exposed wood ceilings, in-unit W/D. Cash only — land lease with 20 years remaining.",
-      "highlights": [
-        "2BD / 2BA split-level",
-        "~1,200 SF",
-        "Large private patio",
-        "Impact windows",
-        "In-unit W/D",
-        "Cash only · Land lease"
-      ],
-      "specs": {
-        "Bedrooms": "2",
-        "Bathrooms": "2",
-        "Sq Ft": "~1,200",
-        "Year Built": "1956",
-        "HOA": "$1,324/mo"
-      },
-      "terms": "All Cash only",
-      "coords": [
-        -80.1395,
-        25.7829
-      ]
     }
   ],
   "closed": {
     "sales": [
       {
-        "address": "10521 SW 184th St",
+        "address": "10541 SW 184th St",
         "type": "Multifamily",
-        "price": "$607,500",
+        "price": "$621,000",
         "coords": [
-          -80.3876,
+          -80.3882,
           25.5813
         ],
-        "mapLabel": "$607,500 · 10521 SW",
+        "mapLabel": "$621,000 · 10541 SW",
         "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514580/10521_gusgqy.jpg",
-        "description": "Duplex in the heart of Palmetto Bay. Well-maintained income property with strong rental history in one of Miami-Dade's most sought-after residential submarkets.",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514864/10541_jdnqr7.jpg",
+        "description": "Duplex on the SW 184th corridor. Closed as part of a multi-transaction sweep of Palmetto Bay multifamily assets, with multiple parties identified and closed in the same submarket.",
         "highlights": [
           "Duplex",
-          "Palmetto Bay submarket",
-          "Strong rental history",
-          "Quiet residential street"
+          "Palmetto Bay",
+          "Portfolio context deal",
+          "Closed quickly"
         ],
         "specs": {
           "Type": "Multifamily",
           "Neighborhood": "Palmetto Bay",
-          "Sale Price": "$607,500",
+          "Sale Price": "$621,000",
           "Status": "Sold"
         },
         "neighborhood": "Palmetto Bay",
         "city": "Miami, FL 33157"
-      },
-      {
-        "address": "14513 SW 104th Pl",
-        "type": "Single Family",
-        "price": "$550,000",
-        "coords": [
-          -80.3551,
-          25.6627
-        ],
-        "mapLabel": "$550,000 · 14513 SW",
-        "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514665/104_place_jxydv3.jpg",
-        "description": "Single family home in Kendall with strong bones and excellent location. Delivered vacant at closing, providing the buyer full flexibility for owner-occupancy or immediate rental.",
-        "highlights": [
-          "Single Family",
-          "Kendall location",
-          "Delivered vacant",
-          "Close to major corridors"
-        ],
-        "specs": {
-          "Type": "Single Family",
-          "Neighborhood": "Kendall",
-          "Sale Price": "$550,000",
-          "Status": "Sold"
-        },
-        "neighborhood": "Kendall",
-        "city": "Miami, FL 33186"
       },
       {
         "address": "10621 SW 184th St",
@@ -545,81 +479,69 @@
         "city": "Miami, FL 33157"
       },
       {
-        "address": "7544 NE 1st Ave",
+        "address": "10601 SW 184th St",
         "type": "Multifamily",
-        "price": "$480,000",
+        "price": "$617,500",
         "coords": [
-          -80.1907,
-          25.8462
-        ],
-        "mapLabel": "$480,000 · 7544 NE",
-        "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514748/7544_ne_1_mqglb9.jpg",
-        "description": "Multifamily income property in Little River, one of Miami's fastest-appreciating urban submarkets. Positioned near the Little River District's booming commercial corridor.",
-        "highlights": [
-          "Little River submarket",
-          "Income producing",
-          "Near commercial corridor",
-          "Strong appreciation trajectory"
-        ],
-        "specs": {
-          "Type": "Multifamily",
-          "Neighborhood": "Little River",
-          "Sale Price": "$480,000",
-          "Status": "Sold"
-        },
-        "neighborhood": "Little River",
-        "city": "Miami, FL 33138"
-      },
-      {
-        "address": "7560 NE Miami Ct",
-        "type": "Multifamily",
-        "price": "$400,000",
-        "coords": [
-          -80.1921,
-          25.846
-        ],
-        "mapLabel": "$400,000 · 7560 NE",
-        "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514791/7544_ne_miami_wpdyvo.jpg",
-        "description": "Multifamily property steps from 7544 NE 1st Ave, demonstrating block-level deal-making expertise in the Little River corridor. Strong in-place rents with upside.",
-        "highlights": [
-          "Little River corridor",
-          "Adjacent to prior sale",
-          "In-place rents",
-          "Value-add upside"
-        ],
-        "specs": {
-          "Type": "Multifamily",
-          "Neighborhood": "Little River",
-          "Sale Price": "$400,000",
-          "Status": "Sold"
-        },
-        "neighborhood": "Little River",
-        "city": "Miami, FL 33138"
-      },
-      {
-        "address": "10541 SW 184th St",
-        "type": "Multifamily",
-        "price": "$621,000",
-        "coords": [
-          -80.3882,
+          -80.3886,
           25.5813
         ],
-        "mapLabel": "$621,000 · 10541 SW",
+        "mapLabel": "$617,500 · 10601 SW",
         "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514864/10541_jdnqr7.jpg",
-        "description": "Duplex on the SW 184th corridor. Closed as part of a multi-transaction sweep of Palmetto Bay multifamily assets, with multiple parties identified and closed in the same submarket.",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517753/10601_sw_184_nntbps.jpg",
+        "description": "",
+        "highlights": [],
+        "specs": {}
+      },
+      {
+        "address": "18350 SW 105th Ave",
+        "type": "Multifamily",
+        "price": "$613,741",
+        "coords": [
+          -80.3571,
+          25.5994
+        ],
+        "mapLabel": "$613,741 · 18350 SW",
+        "mapType": "sold",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515003/18350_SW_105th_Ave_excztr.jpg",
+        "description": "Income-producing duplex in Kendall West. Well-located near Kendall's retail spine with easy access to major expressways. Purchased by an investor targeting stable cash-flow assets.",
         "highlights": [
           "Duplex",
-          "Palmetto Bay",
-          "Portfolio context deal",
-          "Closed quickly"
+          "Kendall West",
+          "Stable cash flow",
+          "Near retail corridor"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Kendall West",
+          "Sale Price": "$613,741",
+          "Status": "Sold"
+        },
+        "neighborhood": "Kendall West",
+        "city": "Miami, FL 33196"
+      },
+      {
+        "address": "10521 SW 184th St",
+        "type": "Multifamily",
+        "price": "$607,500",
+        "coords": [
+          -80.3876,
+          25.5813
+        ],
+        "mapLabel": "$607,500 · 10521 SW",
+        "mapType": "sold",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514580/10521_gusgqy.jpg",
+        "description": "Duplex in the heart of Palmetto Bay. Well-maintained income property with strong rental history in one of Miami-Dade's most sought-after residential submarkets.",
+        "highlights": [
+          "Duplex",
+          "Palmetto Bay submarket",
+          "Strong rental history",
+          "Quiet residential street"
         ],
         "specs": {
           "Type": "Multifamily",
           "Neighborhood": "Palmetto Bay",
-          "Sale Price": "$621,000",
+          "Sale Price": "$607,500",
           "Status": "Sold"
         },
         "neighborhood": "Palmetto Bay",
@@ -653,31 +575,61 @@
         "city": "Miami, FL 33157"
       },
       {
-        "address": "18350 SW 105th Ave",
-        "type": "Multifamily",
-        "price": "$613,741",
+        "address": "14513 SW 104th Pl",
+        "type": "Single Family",
+        "price": "$550,000",
         "coords": [
-          -80.3571,
-          25.5994
+          -80.3551,
+          25.6627
         ],
-        "mapLabel": "$613,741 · 18350 SW",
+        "mapLabel": "$550,000 · 14513 SW",
         "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515003/18350_SW_105th_Ave_excztr.jpg",
-        "description": "Income-producing duplex in Kendall West. Well-located near Kendall's retail spine with easy access to major expressways. Purchased by an investor targeting stable cash-flow assets.",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514665/104_place_jxydv3.jpg",
+        "description": "Single family home in Kendall with strong bones and excellent location. Delivered vacant at closing, providing the buyer full flexibility for owner-occupancy or immediate rental.",
         "highlights": [
-          "Duplex",
-          "Kendall West",
-          "Stable cash flow",
-          "Near retail corridor"
+          "Single Family",
+          "Kendall location",
+          "Delivered vacant",
+          "Close to major corridors"
         ],
         "specs": {
-          "Type": "Multifamily",
-          "Neighborhood": "Kendall West",
-          "Sale Price": "$613,741",
+          "Type": "Single Family",
+          "Neighborhood": "Kendall",
+          "Sale Price": "$550,000",
           "Status": "Sold"
         },
-        "neighborhood": "Kendall West",
-        "city": "Miami, FL 33196"
+        "neighborhood": "Kendall",
+        "city": "Miami, FL 33186"
+      },
+      {
+        "address": "27 SW 55 Ave Rd",
+        "type": "Multifamily",
+        "price": "$550,000",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515763/27_sw_55_ave_rd_tajby0.jpg",
+        "coords": [
+          -80.2698,
+          25.7682
+        ],
+        "mapLabel": "$550K · 27 SW 55 Ave Rd",
+        "mapType": "sold",
+        "neighborhood": "West Miami",
+        "city": "Miami, FL 33144",
+        "description": "Triplex in West Miami, sold at $550,000. Well-maintained three-unit income property with strong in-place rents and long-term tenants in one of Miami's most stable residential corridors.",
+        "highlights": [
+          "Triplex",
+          "3 units",
+          "West Miami",
+          "In-place rents",
+          "Stable tenants",
+          "Strong hold basis"
+        ],
+        "specs": {
+          "Type": "Triplex",
+          "Units": "3",
+          "Neighborhood": "West Miami",
+          "Sale Price": "$550,000",
+          "Status": "Sold"
+        }
       },
       {
         "address": "3 NE 75th St",
@@ -704,6 +656,33 @@
           "Status": "Sold"
         },
         "neighborhood": "Upper East Side",
+        "city": "Miami, FL 33138"
+      },
+      {
+        "address": "7544 NE 1st Ave",
+        "type": "Multifamily",
+        "price": "$480,000",
+        "coords": [
+          -80.1907,
+          25.8462
+        ],
+        "mapLabel": "$480,000 · 7544 NE",
+        "mapType": "sold",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514748/7544_ne_1_mqglb9.jpg",
+        "description": "Multifamily income property in Little River, one of Miami's fastest-appreciating urban submarkets. Positioned near the Little River District's booming commercial corridor.",
+        "highlights": [
+          "Little River submarket",
+          "Income producing",
+          "Near commercial corridor",
+          "Strong appreciation trajectory"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Little River",
+          "Sale Price": "$480,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Little River",
         "city": "Miami, FL 33138"
       },
       {
@@ -734,19 +713,31 @@
         "city": "Miami, FL 33176"
       },
       {
-        "address": "10601 SW 184th St",
+        "address": "7560 NE Miami Ct",
         "type": "Multifamily",
-        "price": "$617,500",
+        "price": "$400,000",
         "coords": [
-          -80.3886,
-          25.5813
+          -80.1921,
+          25.846
         ],
-        "mapLabel": "$617,500 · 10601 SW",
+        "mapLabel": "$400,000 · 7560 NE",
         "mapType": "sold",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779517753/10601_sw_184_nntbps.jpg",
-        "description": "",
-        "highlights": [],
-        "specs": {}
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779514791/7544_ne_miami_wpdyvo.jpg",
+        "description": "Multifamily property steps from 7544 NE 1st Ave, demonstrating block-level deal-making expertise in the Little River corridor. Strong in-place rents with upside.",
+        "highlights": [
+          "Little River corridor",
+          "Adjacent to prior sale",
+          "In-place rents",
+          "Value-add upside"
+        ],
+        "specs": {
+          "Type": "Multifamily",
+          "Neighborhood": "Little River",
+          "Sale Price": "$400,000",
+          "Status": "Sold"
+        },
+        "neighborhood": "Little River",
+        "city": "Miami, FL 33138"
       },
       {
         "address": "401 NW 81st St",
@@ -776,33 +767,34 @@
         "city": "Miami, FL 33150"
       },
       {
-        "address": "27 SW 55 Ave Rd",
-        "type": "Multifamily",
-        "price": "$550,000",
-        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779515763/27_sw_55_ave_rd_tajby0.jpg",
+        "address": "1115 Meridian Ave #TH",
+        "type": "Townhouse Condo",
+        "price": "$400,000",
+        "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1779512034/1115_meridian_c5mliq.jpg",
         "coords": [
-          -80.2698,
-          25.7682
+          -80.1395,
+          25.7829
         ],
-        "mapLabel": "$550K · 27 SW 55 Ave Rd",
+        "mapLabel": "$400K · 1115 Meridian",
         "mapType": "sold",
-        "neighborhood": "West Miami",
-        "city": "Miami, FL 33144",
-        "description": "Triplex in West Miami, sold at $550,000. Well-maintained three-unit income property with strong in-place rents and long-term tenants in one of Miami's most stable residential corridors.",
+        "neighborhood": "South Beach",
+        "city": "Miami Beach, FL 33139",
+        "description": "Split-level townhouse condo with private patio and fenced garden. 2BD/2BA, impact windows, exposed wood ceilings, in-unit W/D. Sold at $400,000 — cash transaction on land lease property.",
         "highlights": [
-          "Triplex",
-          "3 units",
-          "West Miami",
-          "In-place rents",
-          "Stable tenants",
-          "Strong hold basis"
+          "2BD / 2BA split-level",
+          "~1,200 SF",
+          "Private patio & garden",
+          "Impact windows",
+          "In-unit W/D",
+          "Cash transaction"
         ],
         "specs": {
-          "Type": "Triplex",
-          "Units": "3",
-          "Neighborhood": "West Miami",
-          "Sale Price": "$550,000",
-          "Status": "Sold"
+          "Type": "Townhouse Condo",
+          "Bedrooms": "2",
+          "Bathrooms": "2",
+          "Sq Ft": "~1,200",
+          "Neighborhood": "South Beach",
+          "Sale Price": "$400,000"
         }
       },
       {
