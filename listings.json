@@ -1,5 +1,4 @@
 
-
 {
   "meta": {
     "agentName": "Michael McCourt",
@@ -23,6 +22,49 @@
     ]
   },
   "active": [
+    {
+      "id": "333-ne-23rd",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Edgewater",
+      "city": "Miami, FL 33137",
+      "address": "333 NE 23rd St",
+      "type": "Land — Commercial · Zoning 6405",
+      "mlsId": "A12072319",
+      "price": 21500000,
+      "priceDisplay": "$21,500,000",
+      "priceNote": "$910/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1787518738/Screenshot_2026-08-23_at_4.58.34_PM_jsujki.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.1963,
+        25.8035
+      ],
+      "mapLabel": "$21.5M · 333 NE 23rd St",
+      "description": "Prime Edgewater development site — 23,639 SF (0.54 acres) on a corner lot with 139 ft frontage and 170 ft depth. Zoned Central Urban / Urban Commercial. Corner location with full city exposure in one of Miami's fastest-growing corridors, steps from Biscayne Blvd and surrounded by luxury high-rise development.",
+      "highlights": [
+        "23,639 SF · 0.54 acres",
+        "Corner lot — 139 ft frontage",
+        "Zoning 6405",
+        "Central Urban / Urban Commercial",
+        "Edgewater — Miami's fastest corridor",
+        "Steps from Biscayne Blvd"
+      ],
+      "specs": {
+        "Lot SF": "23,639",
+        "Lot Front": "139 ft",
+        "Lot Depth": "170 ft",
+        "Acres": "0.54",
+        "Zoning": "6405",
+        "ML#": "A12072319"
+      },
+      "terms": "All Cash · Conventional"
+    },
     {
       "id": "142-ne-26th",
       "status": "active",
@@ -294,6 +336,49 @@
       "terms": "All Cash · Conventional · Owner/User"
     },
     {
+      "id": "7400-sw-98th",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Pinecrest",
+      "city": "Pinecrest, FL 33156",
+      "address": "7400 SW 98th St",
+      "type": "Residential Land",
+      "mlsId": "A12075369",
+      "price": 1900000,
+      "priceDisplay": "$1,900,000",
+      "priceNote": "$103/SF",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1787518493/Screenshot_2026-08-23_at_4.53.52_PM_zmifll.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.3125,
+        25.6638
+      ],
+      "mapLabel": "$1.9M · 7400 SW 98th St",
+      "description": "Undeveloped residential land in the heart of Pinecrest — 18,500 SF (0.42 acres) zoned residential. One of Miami-Dade's most coveted addresses, Pinecrest offers top-rated schools, estate-sized lots, and a quiet suburban character minutes from Coral Gables and Coconut Grove. Build your custom dream home or hold as a premium land asset.",
+      "highlights": [
+        "18,500 SF · 0.42 acres",
+        "Undeveloped — build to suit",
+        "Pinecrest — top school district",
+        "Zoned Residential",
+        "East exposure",
+        "1 parcel"
+      ],
+      "specs": {
+        "Lot SF": "18,500",
+        "Acres": "0.42",
+        "Zoning": "Residential",
+        "Style": "Zoned Residential",
+        "Neighborhood": "Pinecrest",
+        "ML#": "A12075369"
+      },
+      "terms": "All Cash · Conventional"
+    },
+    {
       "id": "6326-nw-4th",
       "status": "active",
       "badge": "For Sale",
@@ -337,6 +422,50 @@
         "Zoning": "4600"
       },
       "terms": "All Cash · FHA"
+    },
+    {
+      "id": "2728-nw-3rd",
+      "status": "active",
+      "badge": "For Sale",
+      "badgeType": "sale",
+      "tags": [
+        "sale",
+        "investment"
+      ],
+      "neighborhood": "Allapattah",
+      "city": "Miami, FL 33125",
+      "address": "2728 NW 3rd St",
+      "type": "Single Family — Covered Land Play",
+      "mlsId": "A12070506",
+      "price": 525000,
+      "priceDisplay": "$525,000",
+      "priceNote": "",
+      "imageUrl": "https://res.cloudinary.com/dq1n9kjox/image/upload/v1787518933/Screenshot_2026-08-23_at_5.01.44_PM_lhqk90.png",
+      "imageBg": "linear-gradient(135deg,#041E42,#0a2d5e)",
+      "coords": [
+        -80.2198,
+        25.7885
+      ],
+      "mapLabel": "$525K · 2728 NW 3rd St",
+      "description": "2BD/1BA single family home built in 1937 in Allapattah — Miami's most rapidly evolving urban neighborhood. Sitting on a 6,000 SF lot zoned R30, this property offers immediate income as a rental or a covered land play in a submarket seeing explosive demand driven by the Health District, Wynwood, and major institutional investment.",
+      "highlights": [
+        "2BD / 1BA",
+        "828 SF living · 6,000 SF lot",
+        "Zoning R30",
+        "Built 1937",
+        "Allapattah — high growth corridor",
+        "Near Health District & Wynwood"
+      ],
+      "specs": {
+        "Bedrooms": "2",
+        "Bathrooms": "1",
+        "Living SF": "828",
+        "Lot SF": "6,000",
+        "Year Built": "1937",
+        "Zoning": "R30",
+        "ML#": "A12070506"
+      },
+      "terms": "All Cash · Conventional · FHA · VA"
     },
     {
       "id": "bay-park-618",
